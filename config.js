@@ -25,7 +25,7 @@ const MAX = {
             {
                 when: ['10/18', 'present'],
                 where: 'C&A',
-                what: ['UX Manager', 'Product Owner'],
+                what: ['UX Manager', 'Knowledge Lead', 'Product Owner'],
                 link: 'http://www.c-a.com/'
             },
             {
