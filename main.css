@@ -3,10 +3,14 @@
     --foreground: #fdc702;
     --highlight: #fff203; */
 
-    --background: #74DAC6;
+    /*--background: #74DAC6;
     --foreground: #333366;
+    --highlight: #fff203;*/
+
+    --background: #d2e1c8;
+    --foreground: #1f574c;
     --highlight: #fff203;
-    --link-highligt: rgba(0, 0, 0, .15);
+    --link-highligt: rgba(31, 87, 76, .15);
 
     --sans-serif-font: "Helvetica Neue", Helvetica, Verdana, sans-serif;
     --serif-font: Georgia, 'Times New Roman', Times, serif;
