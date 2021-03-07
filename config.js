@@ -53,13 +53,11 @@ const MAX = {
                 {
                     title: 'I Don’t Have That Much Data! Reusing User Behavior Models for Websites from Different Domains',
                     authors: ['M. Bakaev', 'M. Speicher', 'S. Heil', 'M. Gaedke'],
-                    isNew: true,
                     link: 'https://2008.maxspeicher.com/2020/04/11/2-research-papers-accepted-at-international-conferences-1-best-paper-award/',
                 },
                 {
                     title: 'MRAT: The Mixed Reality Analytics Toolkit',
                     authors: ['M. Nebeling', 'M. Speicher', 'X. Wang', 'S. Rajaram', 'B.D. Hall', 'Z. Xie', 'A.R.E. Raistrick', 'M. Aebersold', 'E.G. Happ', 'J. Wang', 'Y. Sun', 'L. Zhang', 'L. Ramsier', 'R. Kulkarni'],
-                    isNew: true,
                     link: 'https://www.mi2lab.com/research/mrat/',
                     award: '🏆 Best Paper Award'
                 },
@@ -99,28 +97,37 @@ const MAX = {
         },
         writing: [
             {
+                title: '5 Foolproof Conversion Rate Optimizations for Your E-commerce Business',
+                publication: '2008 ‒ Tales of Design & User Experience',
+                isNew: true,
+                link: 'https://2008.maxspeicher.com/2021/03/07/5-foolproof-conversion-rate-optimizations-for-your-e-commerce-business/'
+            },
+            {
+                title: 'KPI-Centered Design [in German]',
+                publication: 'IP InnovationLAB Blog',
+                isNew: true,
+                link: 'https://www.interactive-pioneers.de/lab/kpi-centered-design/'
+            },
+            {
                 title: 'How to become a UX designer — no matter what you studied at uni',
                 publication: 'The Next Web',
-                isNew: true,
                 link: 'https://thenextweb.com/growth-quarters/2020/09/28/how-to-become-a-ux-designer-no-matter-what-you-studied-at-uni/'
             },
             {
                 title: 'How to build and lead user experience (UX) teams',
                 publication: 'UX Collective',
-                isNew: true,
                 link: 'https://uxdesign.cc/how-to-build-and-lead-user-experience-ux-teams-6d4b802071d0'
             },
             {
                 title: '5 design methods I’ve successfully applied as a UX manager',
                 publication: 'UX Collective',
-                isNew: true,
                 link: 'https://uxdesign.cc/5-design-methods-ive-successfully-applied-as-a-ux-manager-at-c-a-ca3e1da11b8c'
             },
-            {
+            /*{
                 title: 'What is Design Thinking?',
                 publication: 'Muzli',
                 link: 'https://medium.muz.li/what-is-design-thinking-4afa067cb986'
-            },
+            },*/
             {
                 title: 'How usability impacts profit: The Conversion/Usability Framework',
                 publication: 'UX Collective',
