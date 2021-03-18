@@ -17,6 +17,10 @@ const MAX = {
             {
                 text: 'Blog',
                 href: 'https://2008.maxspeicher.com/'
+            },
+            {
+                text: 'Medium',
+                href: 'https://maxspeicher.medium.com/'
             }
         ]
     },
@@ -97,16 +101,16 @@ const MAX = {
         },
         writing: [
             {
-                title: '5 Foolproof Conversion Rate Optimizations for Your E-commerce Business',
-                publication: '2008 ‒ Tales of Design & User Experience',
+                title: 'KPI-centered design',
+                publication: 'UX Collective',
                 isNew: true,
-                link: 'https://2008.maxspeicher.com/2021/03/07/5-foolproof-conversion-rate-optimizations-for-your-e-commerce-business/'
+                link: 'https://uxdesign.cc/kpi-centered-design-8d1f4e231a5'
             },
             {
-                title: 'KPI-Centered Design [in German]',
-                publication: 'IP InnovationLAB Blog',
+                title: '5 foolproof conversion rate optimizations for your e-commerce business',
+                publication: 'Bootcamp',
                 isNew: true,
-                link: 'https://www.interactive-pioneers.de/lab/kpi-centered-design/'
+                link: 'https://bootcamp.uxdesign.cc/5-foolproof-conversion-rate-optimizations-for-your-e-commerce-business-1497c682f713'
             },
             {
                 title: 'How to become a UX designer — no matter what you studied at uni',
