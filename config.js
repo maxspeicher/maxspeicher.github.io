@@ -55,7 +55,7 @@ const MAX = {
             highlightAuthor: 'M. Speicher',
             publications: [
                 {
-                    title: 'I Don’t Have That Much Data! Reusing User Behavior Models for Websites from Different DomainsDesigners, the Stage Is Yours! Medium-Fidelity Prototyping of Augmented & Virtual Reality Interfaces with 360theater',
+                    title: 'Designers, the Stage Is Yours! Medium-Fidelity Prototyping of Augmented & Virtual Reality Interfaces with 360theater',
                     authors: ['M. Speicher', 'K. Lewis', 'M. Nebeling'],
                     isNew: true,
                     link: 'https://dl.acm.org/doi/10.1145/3461727'
