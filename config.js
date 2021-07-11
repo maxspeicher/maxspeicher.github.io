@@ -55,9 +55,10 @@ const MAX = {
             highlightAuthor: 'M. Speicher',
             publications: [
                 {
-                    title: 'I Don’t Have That Much Data! Reusing User Behavior Models for Websites from Different Domains',
-                    authors: ['M. Bakaev', 'M. Speicher', 'S. Heil', 'M. Gaedke'],
-                    link: 'https://2008.maxspeicher.com/2020/04/11/2-research-papers-accepted-at-international-conferences-1-best-paper-award/',
+                    title: 'I Don’t Have That Much Data! Reusing User Behavior Models for Websites from Different DomainsDesigners, the Stage Is Yours! Medium-Fidelity Prototyping of Augmented & Virtual Reality Interfaces with 360theater',
+                    authors: ['M. Speicher', 'K. Lewis', 'M. Nebeling'],
+                    isNew: true,
+                    link: 'https://dl.acm.org/doi/10.1145/3461727'
                 },
                 {
                     title: 'MRAT: The Mixed Reality Analytics Toolkit',
@@ -101,16 +102,15 @@ const MAX = {
         },
         writing: [
             {
-                title: 'KPI-centered design',
-                publication: 'UX Collective',
+                title: 'Growth Marketing Considered Harmful',
+                publication: 'i-com ‒ Journal of Interactive Media',
                 isNew: true,
-                link: 'https://uxdesign.cc/kpi-centered-design-8d1f4e231a5'
+                link: 'https://www.degruyter.com/document/doi/10.1515/icom-2020-0016/html'
             },
             {
-                title: '5 foolproof conversion rate optimizations for your e-commerce business',
-                publication: 'Bootcamp',
-                isNew: true,
-                link: 'https://bootcamp.uxdesign.cc/5-foolproof-conversion-rate-optimizations-for-your-e-commerce-business-1497c682f713'
+                title: 'KPI-centered design',
+                publication: 'UX Collective',
+                link: 'https://uxdesign.cc/kpi-centered-design-8d1f4e231a5'
             },
             {
                 title: 'How to become a UX designer — no matter what you studied at uni',
