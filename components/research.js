@@ -14,10 +14,10 @@ class Research extends React.Component {
 
             for (var j=0; j<authors.length; ++j) {
                 if (authors[j] === highlightAuthor) {
-                    authorList.push(e('strong', null, authors[j]));
+                    authorList.push(e('strong', null, authors[j].replace(' ', String.fromCharCode(160))));
                     highlightAuthorHasBeenMentioned = true;
                 } else {
-                    authorList.push(authors[j]);
+                    authorList.push(authors[j].replace(' ', String.fromCharCode(160)));
                 }
 
                 if (j === 2 && authors.length > 4 && highlightAuthorHasBeenMentioned) {
