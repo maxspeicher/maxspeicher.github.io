@@ -40,6 +40,7 @@ class OpenSource extends React.Component {
         }
 
         return e('div', null,
+            e(SectionTitle, { text: 'Open Source' }),
             ...entries,
             e('p', null,
                 e('span', { className: 'lighter' } , 'More on '),

@@ -16,6 +16,7 @@ class Work extends React.Component {
         }
 
         return e('div', null,
+            e(SectionTitle, { text: 'Work' }),
             ...entries,
             e('p', null,
                 e('span', { className: 'lighter' } , 'More on '),

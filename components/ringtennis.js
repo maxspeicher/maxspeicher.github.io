@@ -15,7 +15,9 @@ class Ringtennis extends React.Component {
             );
         }
 
-        return e('div', null, ...entries);
+        return e('div', null,
+            e(SectionTitle, { text: 'Ringtennis' }),
+            ...entries);
     }
 }
 

@@ -30,7 +30,7 @@ class Footer extends React.Component {
     
     render() {
         return e('div', null,
-            'Template © 2020 ',
+            'Template © 2020‒21 ',
             e('a', { href: 'https://www.maxspeicher.com/' }, 'Maximilian Speicher'),
             ' • Made with ',
             e('i', { className: 'fa-fw ' + this.state.icons[this.state.index] }, null),

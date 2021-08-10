@@ -41,6 +41,7 @@ class Research extends React.Component {
         }
 
         return e('div', null,
+            e(SectionTitle, { text: 'Research' }),
             ...entries,
             e('p', null,
                 e('span', { className: 'lighter' } , 'More on '),
