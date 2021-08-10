@@ -21,10 +21,10 @@ class SectionTitle extends React.Component {
     componentDidMount() {
         this.timerID = setInterval(
           () => this.tick(),
-          1000
+          750 + Math.round(Math.random() * 500)
         );
 
-        this.typewriter = new Typewriter(this.element.current, { delay: 'natural' });
+        this.typewriter = new Typewriter(this.element.current, { delay: 75 + Math.round(Math.random() * 75) });
     }
     
     componentWillUnmount() {
