@@ -21,15 +21,20 @@
         <script src="react/react-dom.development.js"></script>
         
         <script src="config.js"></script>
+        <script src="js/typewriter.js"></script>
         <script src="components/init.js"></script>
         <script src="components/flags-and-icons.js"></script>
+        <script src="components/section-title.js"></script>
     </head>
     <body>
         <header></header>
         <script src="components/header.js"></script>
         <div id="main">
             <section class="column">
-                <h2>Intro</h2>
+                <div id="intro-title"></div>
+                <script>
+                    ReactDOM.render(e(SectionTitle, { text: 'Intro' }), document.querySelector('#intro-title'));
+                </script>
                 <p>
                     Hi! I'm Max and I'm passionate about beautiful and usable design.
                     I've worked extensively on
@@ -54,35 +59,25 @@
                 </p>
             </section>
             <section class="column column--short">
-                <h2>Writing</h2>
                 <div id="writing"></div>
                 <script src="components/writing.js"></script>
             </section>
             <section class="column column--short">
-                <h2>Work</h2>
                 <div id="work"></div>
                 <script src="components/work.js"></script>
             </section>
             <section class="column">
-                <h2>Research</h2>
                 <div id="research"></div>
                 <script src="components/research.js"></script>
             </section>
             <section class="column column--short">
-                <h2>Open Source</h2>
                 <div id="open-source"></div>
                 <script src="components/open-source.js"></script>
             </section>
             <section class="column column--short">
-                <h2>Ringtennis</h2>
                 <div id="ringtennis"></div>
                 <script src="components/ringtennis.js"></script>
             </section>
-            <!-- <section class="column column--short">
-                <h2>Other</h2>
-                <div id="other"></div>
-                <script src="components/other.js"></script>
-            </section> -->
             <footer></footer>
             <script src="components/footer.js"></script>
         </div>
