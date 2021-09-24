@@ -234,7 +234,7 @@ const MAX = {
     privacyPolicy: {
         name: 'Dr.-Ing. Maximilian Speicher',
         addressLine1: '℅ Best Secret GmbH',
-        addressLine2: 'Margaretha-Ley-Ring 27',
+        addressLine2: 'Margaretha-Ley-Ring 10',
         zipAndCity: '85609 Aschheim',
         stateAndOrCountry: 'Germany',
         email: '__maximilian.speicher__@bestsecret.com (underscores have been added for spam protection)'
