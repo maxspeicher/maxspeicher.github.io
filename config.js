@@ -233,11 +233,11 @@ const MAX = {
     footer: {},
     privacyPolicy: {
         name: 'Dr.-Ing. Maximilian Speicher',
-        addressLine1: '℅ C&A Mode GmbH & Co. KG, Geschäftsbereich eCommerce',
-        addressLine2: 'Wanheimer Straße 70',
-        zipAndCity: '40472 Düsseldorf',
+        addressLine1: '℅ Best Secret GmbH',
+        addressLine2: 'Margaretha-Ley-Ring 27',
+        zipAndCity: '85609 Aschheim',
         stateAndOrCountry: 'Germany',
-        email: '__maximilian.speicher__@canda.com (underscores have been added for spam protection)'
+        email: '__maximilian.speicher__@bestsecret.com (underscores have been added for spam protection)'
     }
 
 };
