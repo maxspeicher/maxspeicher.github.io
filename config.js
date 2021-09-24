@@ -27,7 +27,13 @@ const MAX = {
     content: {
         work: [
             {
-                when: ['10/18', 'present'],
+                when: ['09/21', 'present'],
+                where: 'BestSecret',
+                what: ['Director Product Design'],
+                link: 'http://www.bestsecret.com/'
+            },
+            {
+                when: ['10/18', '08/21'],
                 where: 'C&A',
                 what: ['UX Manager', 'Knowledge Lead', 'Product Owner'],
                 link: 'http://www.c-a.com/'
