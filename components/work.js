@@ -10,7 +10,7 @@ class Work extends React.Component {
                 e('p', null,
                     e('span', { className: 'block tertiary' }, work[i].when[0], ' ‒ ', work[i].when[1]),
                     e('span', { className: 'margin-right--inline'}, e('a', { href: work[i].link, target: '_blank' }, work[i].where)),
-                    e('span', { className: 'secondary' }, work[i].what.join(', '))
+                    e('span', { className: 'secondary' }, work[i].what.join(' • '))
                 )
             );
         }
