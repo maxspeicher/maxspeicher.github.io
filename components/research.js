@@ -24,7 +24,11 @@ class Research extends React.Component {
                     authorList.push(e('i', null, ' et al.'));
                     break;
                 } else if (j === authors.length-2) {
-                    authorList.push(', & ');
+                    if (authors.length === 2) {
+                        authorList.push(' & ');
+                    } else {
+                        authorList.push(', & ');
+                    }
                 } else if (j < authors.length-2) {
                     authorList.push(', ');
                 }
