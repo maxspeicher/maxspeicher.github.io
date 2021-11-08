@@ -21,15 +21,20 @@
         <script src="react/react-dom.development.js"></script>
         
         <script src="config.js"></script>
+        <script src="plugins/typewriter.js"></script>
         <script src="components/init.js"></script>
         <script src="components/flags-and-icons.js"></script>
+        <script src="components/section-title.js"></script>
     </head>
     <body>
         <header></header>
         <script src="components/header.js"></script>
         <div id="main">
             <section class="column">
-                <h2>Consulting</h2>
+                <div id="title"></div>
+                <script>
+                    ReactDOM.render(e(SectionTitle, { text: 'Consulting' }), document.querySelector('#title'));
+                </script>
                 <p>Coming soon ...</p>
             </section>
             <footer></footer>
