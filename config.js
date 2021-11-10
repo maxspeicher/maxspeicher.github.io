@@ -3,6 +3,7 @@
 const MAX = {
 
     deleteCookiesForDomains: ['.maxspeicher.com'], // necessary to be able to keep GDPR requirements to a minimum
+    productionHostname: 'www.maxspeicher.com',
 
     header: {
         title: {
