@@ -26,7 +26,7 @@ class Writing extends React.Component {
                     ' 2008 ‒ Tales of Design & User Experience'
                 ),
                 e('span', { className: 'lighter' } , ' and '),
-                e('a', { href: 'https://maxspeicher.medium.com/membership', target: '_blank'},
+                e('a', { href: 'https://maxspeicher.medium.com/', target: '_blank'},
                     e('i', { className: 'fab fa-medium' }),
                     ' Medium'
                 )
