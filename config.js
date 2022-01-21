@@ -21,7 +21,7 @@ const MAX = {
             },
             {
                 text: 'Medium',
-                href: 'https://maxspeicher.medium.com/membership'
+                href: 'https://maxspeicher.medium.com/'
             }
         ]
     },
@@ -109,9 +109,14 @@ const MAX = {
         },
         writing: [
             {
+                title: 'Conversion rate & average order value are not UX metrics',
+                publication: 'UX Collective',
+                isNew: true,
+                link: 'https://uxdesign.cc/conversion-rate-average-order-value-are-not-ux-metrics-9d6e7e40e286'
+            },
+            {
                 title: 'Growth Marketing Considered Harmful',
                 publication: 'i-com ‒ Journal of Interactive Media',
-                isNew: true,
                 link: 'https://www.degruyter.com/document/doi/10.1515/icom-2020-0016/html'
             },
             {
@@ -130,16 +135,6 @@ const MAX = {
                 link: 'https://uxdesign.cc/how-to-build-and-lead-user-experience-ux-teams-6d4b802071d0'
             },
             {
-                title: '5 design methods I’ve successfully applied as a UX manager',
-                publication: 'UX Collective',
-                link: 'https://uxdesign.cc/5-design-methods-ive-successfully-applied-as-a-ux-manager-at-c-a-ca3e1da11b8c'
-            },
-            /*{
-                title: 'What is Design Thinking?',
-                publication: 'Muzli',
-                link: 'https://medium.muz.li/what-is-design-thinking-4afa067cb986'
-            },*/
-            {
                 title: 'How usability impacts profit: The Conversion/Usability Framework',
                 publication: 'UX Collective',
                 link: 'https://uxdesign.cc/the-conversion-usability-framework-3e2068edebbc'
@@ -149,6 +144,16 @@ const MAX = {
                 publication: 'The UX Blog',
                 link: 'https://medium.theuxblog.com/on-design-thinking-4a4980aebe8d'
             }
+            /*{
+                title: '5 design methods I’ve successfully applied as a UX manager',
+                publication: 'UX Collective',
+                link: 'https://uxdesign.cc/5-design-methods-ive-successfully-applied-as-a-ux-manager-at-c-a-ca3e1da11b8c'
+            },
+            {
+                title: 'What is Design Thinking?',
+                publication: 'Muzli',
+                link: 'https://medium.muz.li/what-is-design-thinking-4afa067cb986'
+            },*/
         ],
         openSource: [
             {
