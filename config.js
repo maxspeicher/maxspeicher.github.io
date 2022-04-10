@@ -21,7 +21,7 @@ const MAX = {
             },
             {
                 text: 'Medium',
-                href: 'https://maxspeicher.medium.com/'
+                href: 'https://maxspeicher.medium.com/membership'
             }
         ]
     },
