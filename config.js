@@ -109,9 +109,14 @@ const MAX = {
         },
         writing: [
             {
+                title: 'We Need to Get Rid of Significance in A/B Testing, Seriously!',
+                publication: 'ACM interactions',
+                isNew: true,
+                link: 'https://interactions.acm.org/archive/view/march-april-2022/we-need-to-get-rid-of-significance-in-a-b-testing-seriously'
+            },
+            {
                 title: 'Conversion rate & average order value are not UX metrics',
                 publication: 'UX Collective',
-                isNew: true,
                 link: 'https://uxdesign.cc/conversion-rate-average-order-value-are-not-ux-metrics-9d6e7e40e286'
             },
             {
@@ -134,11 +139,11 @@ const MAX = {
                 publication: 'UX Collective',
                 link: 'https://uxdesign.cc/how-to-build-and-lead-user-experience-ux-teams-6d4b802071d0'
             },
-            {
+            /*{
                 title: 'How usability impacts profit: The Conversion/Usability Framework',
                 publication: 'UX Collective',
                 link: 'https://uxdesign.cc/the-conversion-usability-framework-3e2068edebbc'
-            },
+            },*/
             {
                 title: 'On Design Thinking',
                 publication: 'The UX Blog',
