@@ -16,12 +16,8 @@ const MAX = {
                 href: 'consulting.html'
             },
             {
-                text: 'Blog',
-                href: 'https://2008.maxspeicher.com/'
-            },
-            {
-                text: 'Medium',
-                href: 'https://maxspeicher.medium.com/membership'
+                text: 'Writing',
+                href: 'https://maxspeicher.medium.com/selected-articles-essays-4b2deaf00a5f'
             }
         ]
     },
@@ -64,7 +60,6 @@ const MAX = {
                 {
                     title: 'Designers, the Stage Is Yours! Medium-Fidelity Prototyping of Augmented & Virtual Reality Interfaces with 360theater',
                     authors: ['M. Speicher', 'K. Lewis', 'M. Nebeling'],
-                    isNew: true,
                     link: 'https://dl.acm.org/doi/10.1145/3461727'
                 },
                 {
@@ -109,9 +104,14 @@ const MAX = {
         },
         writing: [
             {
+                title: 'One Formula To Rule Them All: The ROI Of A Design System',
+                publication: 'Smashing Magazine',
+                isNew: true,
+                link: 'https://www.smashingmagazine.com/2022/09/formula-roi-design-system/'
+            },
+            {
                 title: 'We Need to Get Rid of Significance in A/B Testing, Seriously!',
                 publication: 'ACM interactions',
-                isNew: true,
                 link: 'https://interactions.acm.org/archive/view/march-april-2022/we-need-to-get-rid-of-significance-in-a-b-testing-seriously'
             },
             {
@@ -159,6 +159,20 @@ const MAX = {
                 publication: 'Muzli',
                 link: 'https://medium.muz.li/what-is-design-thinking-4afa067cb986'
             },*/
+        ],
+        poetry: [
+            {
+                title: 'On Freedom',
+                publication: 'Impspired',
+                isNew: true,
+                link: 'https://impspired.com/2022/10/03/maximilian-speicher/'
+            },
+            {
+                title: 'Four Stars',
+                publication: 'Impspired',
+                isNew: true,
+                link: 'https://impspired.com/2022/10/03/maximilian-speicher/'
+            }
         ],
         openSource: [
             {
