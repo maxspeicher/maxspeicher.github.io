@@ -104,9 +104,14 @@ const MAX = {
         },
         writing: [
             {
+                title: 'Beyond form and function: Design is poetry',
+                publication: 'DOC',
+                isNew: true,
+                link: 'https://www.doc.cc/articles/design-is-poetry'
+            },
+            {
                 title: 'One Formula To Rule Them All: The ROI Of A Design System',
                 publication: 'Smashing Magazine',
-                isNew: true,
                 link: 'https://www.smashingmagazine.com/2022/09/formula-roi-design-system/'
             },
             {
@@ -134,12 +139,12 @@ const MAX = {
                 publication: 'The Next Web',
                 link: 'https://thenextweb.com/growth-quarters/2020/09/28/how-to-become-a-ux-designer-no-matter-what-you-studied-at-uni/'
             },
-            {
+            /*{
                 title: 'How to build and lead user experience (UX) teams',
                 publication: 'UX Collective',
                 link: 'https://uxdesign.cc/how-to-build-and-lead-user-experience-ux-teams-6d4b802071d0'
             },
-            /*{
+            {
                 title: 'How usability impacts profit: The Conversion/Usability Framework',
                 publication: 'UX Collective',
                 link: 'https://uxdesign.cc/the-conversion-usability-framework-3e2068edebbc'
@@ -162,15 +167,25 @@ const MAX = {
         ],
         poetry: [
             {
+                title: 'A Tale of Trees',
+                publication: 'Otoliths Magazine',
+                isNew: true,
+                link: 'https://the-otolith.blogspot.com/2022/09/maximilian-speicher_7.html'
+            },
+            {
+                title: 'Life',
+                publication: 'Otoliths Magazine',
+                isNew: true,
+                link: 'https://the-otolith.blogspot.com/2022/09/maximilian-speicher.html'
+            },
+            {
                 title: 'On Freedom',
                 publication: 'Impspired',
-                isNew: true,
                 link: 'https://impspired.com/2022/10/03/maximilian-speicher/'
             },
             {
                 title: 'Four Stars',
                 publication: 'Impspired',
-                isNew: true,
                 link: 'https://impspired.com/2022/10/03/maximilian-speicher/'
             }
         ],
