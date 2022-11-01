@@ -170,23 +170,23 @@ const MAX = {
                 title: 'A Tale of Trees',
                 publication: 'Otoliths Magazine',
                 isNew: true,
-                link: 'https://the-otolith.blogspot.com/2022/09/maximilian-speicher_7.html'
+                link: 'https://tiny.one/mr2264v2'
             },
             {
                 title: 'Life',
                 publication: 'Otoliths Magazine',
                 isNew: true,
-                link: 'https://the-otolith.blogspot.com/2022/09/maximilian-speicher.html'
+                link: 'https://tiny.one/5fmw36aa'
             },
             {
                 title: 'On Freedom',
                 publication: 'Impspired',
-                link: 'https://impspired.com/2022/10/03/maximilian-speicher/'
+                link: 'https://tiny.one/cfcftrrp'
             },
             {
                 title: 'Four Stars',
                 publication: 'Impspired',
-                link: 'https://impspired.com/2022/10/03/maximilian-speicher/'
+                link: 'https://tiny.one/cfcftrrp'
             }
         ],
         openSource: [
