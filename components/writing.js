@@ -17,7 +17,7 @@ class Writing extends React.Component {
         }
 
         return e('div', null,
-            e(SectionTitle, { text: 'Writing' }),
+            e(SectionTitle, { text: 'Essays' }),
             ...entries,
             e('p', null,
                 e('span', { className: 'lighter' } , 'More on '),
