@@ -108,9 +108,14 @@ const MAX = {
         },
         writing: [
             {
+                title: 'So, How Can We Measure UX?',
+                publication: 'ACM interactions',
+                isNew: true,
+                link: 'https://interactions.acm.org/blog/view/so-how-ican-i-we-measure-ux'
+            },
+            {
                 title: 'Beyond form and function: Design is poetry',
                 publication: 'DOC',
-                isNew: true,
                 link: 'https://www.doc.cc/articles/design-is-poetry'
             },
             {
@@ -123,11 +128,11 @@ const MAX = {
                 publication: 'ACM interactions',
                 link: 'https://interactions.acm.org/archive/view/march-april-2022/we-need-to-get-rid-of-significance-in-a-b-testing-seriously'
             },
-            {
+            /*{
                 title: 'Conversion rate & average order value are not UX metrics',
                 publication: 'UX Collective',
                 link: 'https://uxdesign.cc/conversion-rate-average-order-value-are-not-ux-metrics-9d6e7e40e286'
-            },
+            },*/
             {
                 title: 'Growth Marketing Considered Harmful',
                 publication: 'i-com ‒ Journal of Interactive Media',
@@ -171,15 +176,25 @@ const MAX = {
         ],
         poetry: [
             {
+                title: 'Vacation ◦ by the Pool • Three Variations',
+                publication: 'The Disappointed Housewife',
+                isNew: true,
+                link: 'https://tinyurl.com/msDhVbtptv'
+            },
+            {
+                title: 'Five Stanzas for Hemingway',
+                publication: 'The Whisky Blot',
+                isNew: true,
+                link: 'https://tinyurl.com/msWbFsfh'
+            },
+            {
                 title: 'A Tale of Trees',
                 publication: 'Otoliths Magazine',
-                isNew: true,
                 link: 'https://tiny.one/mr2264v2'
             },
             {
                 title: 'Life',
                 publication: 'Otoliths Magazine',
-                isNew: true,
                 link: 'https://tiny.one/5fmw36aa'
             },
             {
