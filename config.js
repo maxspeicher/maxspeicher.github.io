@@ -176,15 +176,19 @@ const MAX = {
         ],
         poetry: [
             {
+                title: 'Cava, Pimientos de Padrón, Burrata, Pasta al Tartufo',
+                publication: 'The Whisky Blot',
+                isNew: true,
+                link: 'https://tinyurl.com/msWbCppbpt'
+            },
+            {
                 title: 'Vacation ◦ by the Pool • Three Variations',
                 publication: 'The Disappointed Housewife',
-                isNew: true,
                 link: 'https://tinyurl.com/msDhVbtptv'
             },
             {
                 title: 'Five Stanzas for Hemingway',
                 publication: 'The Whisky Blot',
-                isNew: true,
                 link: 'https://tinyurl.com/msWbFsfh'
             },
             {
