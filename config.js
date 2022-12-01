@@ -124,11 +124,16 @@ const MAX = {
                 link: 'https://www.smashingmagazine.com/2022/09/formula-roi-design-system/'
             },
             {
+                title: 'Listen to users, but only 85% of the time: How Black Swans Can Save Innovation in a Data-Driven World',
+                publication: 'UX Collective',
+                link: 'https://uxdesign.cc/listen-to-users-but-only-85-of-the-time-da96c2f9dde6'
+            },
+            /*{
                 title: 'We Need to Get Rid of Significance in A/B Testing, Seriously!',
                 publication: 'ACM interactions',
                 link: 'https://interactions.acm.org/archive/view/march-april-2022/we-need-to-get-rid-of-significance-in-a-b-testing-seriously'
             },
-            /*{
+            {
                 title: 'Conversion rate & average order value are not UX metrics',
                 publication: 'UX Collective',
                 link: 'https://uxdesign.cc/conversion-rate-average-order-value-are-not-ux-metrics-9d6e7e40e286'
