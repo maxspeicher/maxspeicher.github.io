@@ -95,7 +95,7 @@ const MAX = {
                     link: 'https://2008.maxspeicher.com/2015/10/29/the-search-interaction-optimization-toolkit-the-essence-of-my-phd-thesis/'
                 },
                 {
-                    title: 'Iɴᴜɪᴛ: The Interface Usability Instrument',
+                    title: '§Inuit§: The Interface Usability Instrument',
                     authors: ['M. Speicher', 'A. Both', 'M. Gaedke'],
                     link: 'https://2008.maxspeicher.com/2015/10/10/inuit-the-interface-usability-instrument/'
                 },
@@ -108,7 +108,7 @@ const MAX = {
         },
         writing: [
             {
-                title: 'So, How Can We Measure UX?',
+                title: 'So, How _Can_ We Measure UX?',
                 publication: 'ACM interactions',
                 isNew: true,
                 link: 'https://interactions.acm.org/blog/view/so-how-ican-i-we-measure-ux'
@@ -181,7 +181,7 @@ const MAX = {
         ],
         poetry: [
             {
-                title: 'Cava, Pimientos de Padrón, Burrata, Pasta al Tartufo',
+                title: '_Cava_, _Pimientos de Padrón_, _Burrata_, _Pasta al Tartufo_',
                 publication: 'The Whisky Blot',
                 isNew: true,
                 link: 'https://tinyurl.com/msWbCppbpt'
@@ -229,6 +229,11 @@ const MAX = {
                     v2: 'https://github.com/maxspeicher/v2',
                     v3: 'https://github.com/maxspeicher/v3'
                 }
+            },
+            {
+                title: '360theater',
+                link: 'https://github.com/mi2lab/360theater',
+                groupProject: true
             },
             {
                 title: 'MRAT (Mixed Reality Analytics Toolkit)',

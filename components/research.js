@@ -37,7 +37,7 @@ class Research extends React.Component {
             entries.push(
                 e('p', null,
                     research[i].isNew ? e(NewFlag, { className: 'margin-right--inline', style: { height: '1em' }, type: 2 }) : '',
-                    e('span', { className: 'margin-right--inline'}, e('a', { href: research[i].link, target: '_blank' }, research[i].title)),
+                    e('span', { className: 'margin-right--inline'}, e('a', { href: research[i].link, target: '_blank' }, e(Maxdown, { text: research[i].title }, null))),
                     e('span', { className: 'secondary' }, ...authorList),
                     research[i].award ? e('span', { className: 'block small-caps' }, research[i].award) : ''
                 )

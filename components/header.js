@@ -6,15 +6,6 @@ function Title() {
 
     var htmlString, titleElement;
 
-    function escapeHtml(unsafe) {
-        return unsafe
-            .replace(/&/g, "&amp;")
-            .replace(/</g, "&lt;")
-            .replace(/>/g, "&gt;")
-            .replace(/"/g, "&quot;")
-            .replace(/'/g, "&#039;");
-    }
-
     function rotate() {
         state.rotateM = (state.rotateM + 90) % 360;
         state.rotateS = (state.rotateS - 45) % 360;

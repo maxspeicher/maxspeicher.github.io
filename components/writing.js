@@ -10,7 +10,7 @@ class Writing extends React.Component {
                 e('p', null,
                     // articles[i].isNew ? e('span', { className: 'block' }, e(NewFlag, { style: { height: '2em', transform: 'rotate(-23deg)' } })) : '',
                     articles[i].isNew ? e(NewFlag, { className: 'margin-right--inline', style: { height: '1em' }, type: 2 }) : '',
-                    e('span', { className: 'margin-right--inline'}, e('a', { href: articles[i].link, target: '_blank' }, articles[i].title)),
+                    e('span', { className: 'margin-right--inline'}, e('a', { href: articles[i].link, target: '_blank' }, e(Maxdown, { text: articles[i].title }, null))),
                     e('span', { className: 'secondary' }, articles[i].publication)
                 )
             );
