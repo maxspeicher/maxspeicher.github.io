@@ -204,7 +204,8 @@ const MAX = {
             {
                 title: 'Life',
                 publication: 'Otoliths Magazine',
-                link: 'https://tiny.one/5fmw36aa'
+                link: 'https://tiny.one/5fmw36aa',
+                nft: 'https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/19936394212209241966299193836316547310851424672911172681285785828191654379521/'
             },
             {
                 title: 'On Freedom',
