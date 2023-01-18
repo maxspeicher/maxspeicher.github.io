@@ -181,9 +181,14 @@ const MAX = {
         ],
         poetry: [
             {
+                title: 'Temples',
+                publication: 'Last Stanza Poetry Journal',
+                isNew: true,
+                link: 'https://tinyurl.com/msLspjTe'
+            },
+            {
                 title: '_Cava_, _Pimientos de Padrón_, _Burrata_, _Pasta al Tartufo_',
                 publication: 'The Whisky Blot',
-                isNew: true,
                 link: 'https://tinyurl.com/msWbCppbpt'
             },
             {
