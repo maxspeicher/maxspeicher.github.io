@@ -109,7 +109,7 @@ const MAX = {
         writing: [
             {
                 title: 'So, How _Can_ We Measure UX?',
-                publication: 'ACM interactions',
+                publication: 'ACM Interactions',
                 isNew: true,
                 link: 'https://interactions.acm.org/blog/view/so-how-ican-i-we-measure-ux'
             },
@@ -130,7 +130,7 @@ const MAX = {
             },
             /*{
                 title: 'We Need to Get Rid of Significance in A/B Testing, Seriously!',
-                publication: 'ACM interactions',
+                publication: 'ACM Interactions',
                 link: 'https://interactions.acm.org/archive/view/march-april-2022/we-need-to-get-rid-of-significance-in-a-b-testing-seriously'
             },
             {
