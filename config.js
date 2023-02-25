@@ -181,9 +181,14 @@ const MAX = {
         ],
         poetry: [
             {
+                title: 'Memories of California',
+                publication: 'Avalon Literary Review',
+                isNew: true,
+                link: 'https://tinyurl.com/msAlrMoc'
+            },
+            {
                 title: 'Temples',
                 publication: 'Last Stanza Poetry Journal',
-                isNew: true,
                 link: 'https://tinyurl.com/msLspjTe'
             },
             {
