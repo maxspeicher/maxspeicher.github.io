@@ -181,9 +181,14 @@ const MAX = {
         ],
         poetry: [
             {
+                title: '6 Poems',
+                publication: 'The Magnolia Review',
+                isNew: true,
+                link: 'https://tinyurl.com/msTmrSp'
+            },
+            {
                 title: 'Memories of California',
                 publication: 'Avalon Literary Review',
-                isNew: true,
                 link: 'https://tinyurl.com/msAlrMoc'
             },
             {
