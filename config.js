@@ -108,9 +108,14 @@ const MAX = {
         },
         writing: [
             {
+                title: 'A very short history of product management',
+                publication: 'UX Collective',
+                isNew: true,
+                link: 'https://uxdesign.cc/a-very-short-history-of-product-management-1fb6d7f9410'
+            },
+            {
                 title: 'So, How _Can_ We Measure UX?',
                 publication: 'ACM Interactions',
-                isNew: true,
                 link: 'https://interactions.acm.org/blog/view/so-how-ican-i-we-measure-ux'
             },
             {
@@ -143,11 +148,11 @@ const MAX = {
                 publication: 'i-com ‒ Journal of Interactive Media',
                 link: 'https://www.degruyter.com/document/doi/10.1515/icom-2020-0016/html'
             },
-            {
+            /*{
                 title: 'KPI-centered design',
                 publication: 'UX Collective',
                 link: 'https://uxdesign.cc/kpi-centered-design-8d1f4e231a5'
-            },
+            },*/
             {
                 title: 'How to become a UX designer — no matter what you studied at uni',
                 publication: 'The Next Web',
@@ -169,11 +174,6 @@ const MAX = {
                 link: 'https://medium.theuxblog.com/on-design-thinking-4a4980aebe8d'
             }
             /*{
-                title: '5 design methods I’ve successfully applied as a UX manager',
-                publication: 'UX Collective',
-                link: 'https://uxdesign.cc/5-design-methods-ive-successfully-applied-as-a-ux-manager-at-c-a-ca3e1da11b8c'
-            },
-            {
                 title: 'What is Design Thinking?',
                 publication: 'Muzli',
                 link: 'https://medium.muz.li/what-is-design-thinking-4afa067cb986'
