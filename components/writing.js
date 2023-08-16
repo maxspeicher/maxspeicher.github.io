@@ -24,12 +24,12 @@ class Writing extends React.Component {
                 e('a', { href: 'https://maxspeicher.medium.com/membership', target: '_blank'},
                     e('i', { className: 'fab fa-medium' }),
                     ' Medium'
-                ),
+                )/*,
                 e('span', { className: 'lighter' } , ' and '),
                 e('a', { href: 'https://2008.maxspeicher.com', target: '_blank'},
                     e(TwentyOhEightIcon, { style: { height: '1em', transform: 'translateY(.125em)' } }),
                     ' 2008 ‒ Tales of Design & User Experience'
-                )
+                )*/
             )
         );
     }
