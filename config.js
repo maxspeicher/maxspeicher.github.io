@@ -108,14 +108,9 @@ const MAX = {
         },
         writing: [
             {
-                title: 'A very short history of product management',
-                publication: 'UX Collective',
-                isNew: true,
-                link: 'https://uxdesign.cc/a-very-short-history-of-product-management-1fb6d7f9410'
-            },
-            {
                 title: 'So, How _Can_ We Measure UX?',
                 publication: 'ACM Interactions',
+                // isNew: true,
                 link: 'https://interactions.acm.org/blog/view/so-how-ican-i-we-measure-ux'
             },
             {
@@ -133,12 +128,12 @@ const MAX = {
                 publication: 'UX Collective',
                 link: 'https://uxdesign.cc/listen-to-users-but-only-85-of-the-time-da96c2f9dde6'
             },
-            /*{
+            {
                 title: 'We Need to Get Rid of Significance in A/B Testing, Seriously!',
                 publication: 'ACM Interactions',
                 link: 'https://interactions.acm.org/archive/view/march-april-2022/we-need-to-get-rid-of-significance-in-a-b-testing-seriously'
             },
-            {
+            /*{
                 title: 'Conversion rate & average order value are not UX metrics',
                 publication: 'UX Collective',
                 link: 'https://uxdesign.cc/conversion-rate-average-order-value-are-not-ux-metrics-9d6e7e40e286'
@@ -181,9 +176,14 @@ const MAX = {
         ],
         poetry: [
             {
+                title: 'The Mirrored Sky',
+                publication: 'The Orchards Poetry Journal',
+                isNew: true,
+                link: 'https://tinyurl.com/msTopjTms'
+            },
+            {
                 title: '6 Poems',
                 publication: 'The Magnolia Review',
-                isNew: true,
                 link: 'https://tinyurl.com/msTmrSp'
             },
             {
