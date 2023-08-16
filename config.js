@@ -13,7 +13,7 @@ const MAX = {
         menu: [
             {
                 text: 'Newsletter',
-                href: '/newsletter'
+                href: 'https://www.maxspeicher.com/newsletter'
             },
             {
                 text: 'Essays',
