@@ -33,7 +33,7 @@ const MAX = {
         work: [
             {
                 when: ['09/21', 'present'],
-                where: 'BestSecret',
+                where: 'BestSecret Group',
                 what: ['Director of Product Design'],
                 link: 'http://www.bestsecret.com/'
             },
