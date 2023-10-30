@@ -58,7 +58,7 @@ const MAX = {
             {
                 when: ['06/12', '12/14'],
                 where: 'Unister',
-                what: ['Researcher', 'Industrial Ph.D. Student'],
+                what: ['Researcher', 'Ph.D. Student'],
                 link: 'https://web.archive.org/web/20130215000000*/http://www.bluekiwi.de/'
             }
         ],
@@ -112,9 +112,14 @@ const MAX = {
         },
         writing: [
             {
+                title: 'An Actionable And Reliable Usability Questionnaire With Only 7 Items: §Inuit§',
+                publication: 'Smashing Magazine',
+                isNew: true,
+                link: 'https://www.smashingmagazine.com/2023/10/actionable-reliable-usability-questionnaire-inuit/'
+            },
+            {
                 title: 'So, How _Can_ We Measure UX?',
                 publication: 'ACM Interactions',
-                // isNew: true,
                 link: 'https://interactions.acm.org/blog/view/so-how-ican-i-we-measure-ux'
             },
             {
@@ -182,7 +187,7 @@ const MAX = {
             {
                 title: 'The Mirrored Sky',
                 publication: 'The Orchards Poetry Journal',
-                isNew: true,
+                // isNew: true,
                 link: 'https://tinyurl.com/msTopjTms'
             },
             {
