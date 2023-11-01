@@ -287,6 +287,11 @@ const MAX = {
                 discipline: 'VfL Wehbach 1901 e. V.'
             },
             {
+                when: '2023',
+                title: '🏆 World Champion',
+                discipline: 'Team'
+            },
+            {
                 when: '2018',
                 title: '🏆 World Champion',
                 discipline: 'Team'
@@ -294,7 +299,7 @@ const MAX = {
             {
                 when: '2016',
                 title: '🏅 German Champion',
-                discipline: 'Men\'s Alternating Doubles'
+                discipline: 'Men\'s Doubles'
             },
             {
                 when: '2014',
@@ -309,7 +314,12 @@ const MAX = {
             {
                 when: '2011',
                 title: '🏅 German Champion',
-                discipline: 'Men\'s Alternating Doubles'
+                discipline: 'Men\'s Doubles'
+            },
+            {
+                when: '2010',
+                title: '🏆 World Champion',
+                discipline: 'Men\'s Doubles'
             },
             {
                 when: '2008',
@@ -325,6 +335,11 @@ const MAX = {
                 when: '2006',
                 title: '🏆 World Champion',
                 discipline: 'Team'
+            },
+            {
+                when: '2006',
+                title: '🏆 World Champion',
+                discipline: 'Men\'s Doubles'
             }
         ]
     },
