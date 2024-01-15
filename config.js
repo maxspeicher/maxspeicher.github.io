@@ -17,7 +17,7 @@ const MAX = {
             },
             {
                 text: 'Essays',
-                href: 'https://maxspeicher.medium.com/membership'
+                href: 'https://maxspeicher.medium.com/selected-articles-essays-4b2deaf00a5f'
             },
             {
                 text: 'Consulting',
