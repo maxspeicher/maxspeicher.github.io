@@ -1,6 +1,14 @@
 'use strict';
 
 function Title() {
+    const [hash, setHash] = React.useState(location.hash);
+
+    React.useEffect(() => {
+        const onHashChange = () => setHash(location.hash);
+        window.addEventListener('hashchange', onHashChange);
+        return () => window.removeEventListener('hashchange', onHashChange);
+    }, []);
+
     const state = { rotateM: 0, rotateS: 0 };
     const titleRegEx = /(.*){(.)}(.*){(.)}(.*)/.exec(escapeHtml(MAX.header.title.content));
 
@@ -26,7 +34,7 @@ function Title() {
         titleElement = e(
             'h1',
             null,
-            e('a', { href: MAX.header.title.href, onMouseEnter: rotate, onTouchStart: rotate,
+            e('a', { href: MAX.header.title.href + location.hash, onMouseEnter: rotate, onTouchStart: rotate,
                 dangerouslySetInnerHTML: {__html: htmlString} },
                 null
             )
@@ -35,7 +43,7 @@ function Title() {
         titleElement = e(
             'h1',
             null,
-            e('a', { href: MAX.header.title.href },
+            e('a', { href: MAX.header.title.href + location.hash },
                 MAX.header.title.content
             )
         );
@@ -45,6 +53,14 @@ function Title() {
 }
 
 function Menu() {
+    const [hash, setHash] = React.useState(location.hash);
+
+    React.useEffect(() => {
+        const onHashChange = () => setHash(location.hash);
+        window.addEventListener('hashchange', onHashChange);
+        return () => window.removeEventListener('hashchange', onHashChange);
+    }, []);
+
     const menuEntries = [];
 
     for (var i=0; i<MAX.header.menu.length; ++i) {
@@ -53,7 +69,7 @@ function Menu() {
         menuEntries.push(
             e('a', {
                 className: location.pathname.indexOf(entry.href) > -1 ? 'current-page' : '',
-                href: entry.href,
+                href: entry.href.startsWith('http') ? entry.href : entry.href + location.hash,
                 target: entry.href.startsWith('http') ? '_blank' : '_self'
             }, entry.text)
         );
