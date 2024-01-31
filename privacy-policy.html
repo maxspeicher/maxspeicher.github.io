@@ -38,10 +38,12 @@
         <script src="components/util.js"></script>
     </head>
     <body>
+        <div id="reload-button-container"></div>
+        <script src="components/reload-button.js"></script>
         <header></header>
         <script src="components/header.js"></script>
         <div id="main">
-            <section class="column column--wide">
+            <section>
                 <div id="title"></div>
                 <script>
                     ReactDOM.render(e(SectionTitle, { text: 'Privacy Policy' }), document.querySelector('#title'));
@@ -51,10 +53,12 @@
                 <p>The following privacy policy is intended to inform you in particular about the type, scope, purpose, duration, and legal basis for the processing of such data either under our own control or in conjunction with others. We also inform you below about the third-party components we use to optimize our website and improve the user experience which may result in said third parties also processing data they collect and control.</p>
                 <p>Our privacy policy is structured as follows:</p>
                 <p>I. Information about us as controllers of your data<br>II. The rights of users and data subjects<br>III. Information about the data processing</p>
+                
                 <h3>I. Information about us as controllers of your data</h3>
                 <p>The party responsible for this website (the "controller") for purposes of data protection law is:</p>
                 <div id="contact-person"></div>
                 <script src="components/privacy-policy.js"></script>
+                
                 <h3>II. The rights of users and data subjects</h3>
                 <p>With regard to the data processing to be described in more detail below, users and data subjects have the right</p>
                 <ul type="disc">
@@ -66,6 +70,7 @@
                 </ul>
                 <p>In addition, the controller is obliged to inform all recipients to whom it discloses data of any such corrections, deletions, or restrictions placed on processing the same per Art. 16, 17 Para. 1, 18 GDPR. However, this obligation does not apply if such notification is impossible or involves a disproportionate effort. Nevertheless, users have a right to information about these recipients.</p>
                 <p><strong>Likewise, under Art. 21 GDPR, users and data subjects have the right to object to the controller's future processing of their data pursuant to Art. 6 Para. 1 lit. f) GDPR. In particular, an objection to data processing for the purpose of direct advertising is permissible.</strong></p>
+
                 <h3>III. Information about the data processing</h3>
                 <p>Your data processed when using our website will be deleted or blocked as soon as the purpose for its storage ceases to apply, provided the deletion of the same is not in breach of any statutory storage obligations or unless otherwise stipulated below.</p>
 
@@ -82,7 +87,6 @@
 
                 <p><a href="https://www.ratgeberrecht.eu/leistungen/muster-datenschutzerklaerung.html" target="_blank" rel="noopener">Model Data Protection Statement</a> for <a href="https://www.ratgeberrecht.eu/" target="_blank">Anwaltskanzlei Weiß &amp; Partner</a></p>
             </section>
-
             <footer></footer>
             <script src="components/footer.js"></script>
         </div>

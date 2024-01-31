@@ -120,6 +120,31 @@ p {
     margin-block-end: 1.5em;
 }
 
+section:not(.column) {
+    margin: 0 0 var(--global-margin) var(--global-margin);
+    max-width: 60em;
+}
+
+section h2 {
+    display: inline-block;
+    font-family: var(--serif-font);
+    font-weight: normal;
+    padding: 5px;
+    position: relative;
+}
+
+section h2::after {
+    background-color: var(--highlight);
+    bottom: 0;
+    content: '';
+    height: 45%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+}
+
 /**
  * classes
  */
@@ -143,26 +168,6 @@ p {
 /*.column--wide {
     grid-column-end: span 12;
 }*/
-
-.column h2 {
-    display: inline-block;
-    font-family: var(--serif-font);
-    font-weight: normal;
-    padding: 5px;
-    position: relative;
-}
-
-.column h2::after {
-    background-color: var(--highlight);
-    bottom: 0;
-    content: '';
-    height: 45%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    width: 100%;
-    z-index: -1;
-}
 
 .highlight {
     color: var(--highlight);
@@ -255,7 +260,7 @@ p {
 }
 
 /**
- * Small Screens
+ * Small Screens (.column--wide isn't considered here yet)
  */
 
  @media only screen and (min-width: 51em) and (max-width: 63em) { /* 1 long column + 1 short column + 3 * global margin = 21 * global margin */

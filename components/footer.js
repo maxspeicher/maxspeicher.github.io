@@ -35,7 +35,7 @@ class Footer extends React.Component {
             ' • Made with ',
             e('i', { className: 'fa-fw ' + this.state.icons[this.state.index] }, null),
             ' in Düsseldorf & Gordes • ',
-            e('a', { href: 'privacy-policy.html' }, 'Privacy Policy')
+            e('a', { href: 'privacy-policy.html' + location.hash }, 'Privacy Policy')
         );
     }
 }

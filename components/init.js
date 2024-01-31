@@ -42,7 +42,12 @@ const colorSchemes = {
         background: '#1f574c',
         foreground: 'rgba(210, 225, 200, 1.0)',
         highlight: '#030fff' //'#3d0b37'
-    }
+    }/*,
+    'purple': {
+        background: '#2d053d',
+        foreground: 'rgba(35, 140, 197, 1.0)',
+        highlight: '#AB3428'
+    }*/
 };
 
 let styleElement = null;
