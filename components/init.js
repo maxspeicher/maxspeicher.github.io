@@ -41,7 +41,7 @@ const colorSchemes = {
     'mintgreen-inverted': {
         background: '#1f574c',
         foreground: 'rgba(210, 225, 200, 1.0)',
-        highlight: '#030fff' //'#3d0b37'
+        highlight: '#cc00cc'
     }/*,
     'purple': {
         background: '#2d053d',
