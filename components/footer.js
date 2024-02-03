@@ -34,7 +34,7 @@ class Footer extends React.Component {
             e('a', { href: 'https://www.maxspeicher.com/' }, 'Maximilian Speicher'),
             ' • Made with ',
             e('i', { className: 'fa-fw ' + this.state.icons[this.state.index] }, null),
-            ' in Düsseldorf & Gordes • ',
+            ' in Gordes, Düsseldorf, & Barcelona • ',
             e('a', { href: 'privacy-policy.html' + location.hash }, 'Privacy Policy')
         );
     }
