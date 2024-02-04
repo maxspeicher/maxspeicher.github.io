@@ -35,13 +35,25 @@ const MAX = {
                 when: ['09/21', 'present'],
                 where: 'BestSecret Group',
                 what: ['Director of Product Design'],
-                link: 'http://www.bestsecret.com/'
+                link: 'https://www.bestsecret.com/'
+            },
+            {
+                when: ['11/23', 'present'],
+                where: 'neverdone.',
+                what: ['Strategy Advisor'],
+                link: 'https://neverdone.app/'
+            },
+            {
+                when: ['04/21', 'present'],
+                where: 'Jagow Speicher',
+                what: ['Co-Founder', 'UX Consultant'],
+                link: 'https://www.linkedin.com/company/jagow-speicher/'
             },
             {
                 when: ['10/18', '08/21'],
                 where: 'C&A',
-                what: ['UX Manager', 'Knowledge Lead', 'Product Owner'],
-                link: 'http://www.c-a.com/'
+                what: ['UX Manager', 'Product Owner'],
+                link: 'https://www.c-a.com/'
             },
             {
                 when: ['03/17', '09/18'],
@@ -52,7 +64,7 @@ const MAX = {
             {
                 when: ['03/15', '02/17'],
                 where: 'bitstars',
-                what: ['VP of Customer & Data Analytics & Optimization'],
+                what: ['VP of Analytics & CRO'],
                 link: 'https://www.holobuilder.com/'
             },
             {
