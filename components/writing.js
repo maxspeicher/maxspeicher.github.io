@@ -21,7 +21,7 @@ class Writing extends React.Component {
             ...entries,
             e('p', null,
                 e('span', { className: 'lighter' } , 'More on '),
-                e('a', { href: 'https://maxspeicher.medium.com/membership', target: '_blank'},
+                e('a', { href: 'https://maxspeicher.medium.com/selected-articles-essays-4b2deaf00a5f', target: '_blank'},
                     e('i', { className: 'fab fa-medium' }),
                     ' Medium'
                 )/*,
