@@ -187,7 +187,7 @@ const MAX = {
             {
                 title: 'On Design Thinking',
                 publication: 'The UX Blog',
-                link: 'https://medium.theuxblog.com/on-design-thinking-4a4980aebe8d'
+                link: 'https://medium.com/theuxblog/on-design-thinking-4a4980aebe8d'
             }
             /*{
                 title: 'What is Design Thinking?',
