@@ -38,6 +38,11 @@ const e = React.createElement;
      */
 
     const colorSchemes = {
+        'bonay': {
+            background: '#f3e2ca',
+            foreground: 'rgba(0, 0, 178, 1.0)',
+            highlight: '#f58ebd'
+        },
         'mintgreen': {
             background: '#d2e1c8',
             foreground: 'rgba(31, 87, 76, 1.0)',
