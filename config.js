@@ -46,7 +46,7 @@ const MAX = {
             {
                 when: ['04/21', 'present'],
                 where: 'Jagow Speicher',
-                what: ['Co-Founder', 'UX Consultant'],
+                what: ['Partner', 'Fractional UX Lead', 'Principal UX Researcher', 'UX Consultant'],
                 link: 'https://www.linkedin.com/company/jagow-speicher/'
             },
             {
