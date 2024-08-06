@@ -13,7 +13,7 @@
     --link-highligt: rgba(31, 87, 76, .15);*/
 
     --sans-serif-font: "Helvetica Neue", Helvetica, Verdana, sans-serif;
-    --serif-font: Georgia, 'Times New Roman', Times, serif;
+    --serif-font: Georgia, "Times New Roman", Times, serif;
 
     --global-margin: 3em;
 }
@@ -80,7 +80,7 @@ header {
 
 h1 {
     display: inline-block;
-    font-family: var(--serif-font);
+    font-family: var(--sans-serif-font);
     font-size: 2em;
     margin: 0 calc(var(--global-margin) / 2) calc(var(--global-margin) / 4) 0;
     text-transform: uppercase;
