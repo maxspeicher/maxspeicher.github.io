@@ -78,9 +78,9 @@ const MAX = {
             highlightAuthor: 'M. Speicher',
             publications: [
                 {
-                    title: 'Smart Green Nudging: Reducing Product Returns ThroughDigital Footprints and Causal Machine Learning',
+                    title: 'Smart Green Nudging: Reducing Product Returns Through Digital Footprints and Causal Machine Learning',
                     authors: ['M. von Zahn', 'K. Bauer', 'C. Mihale-Wilson', 'J. Jagow', 'M. Speicher', 'O. Hinz'],
-                    link: 'https://dl.acm.org/doi/10.1145/3461727',
+                    link: 'https://doi.org/10.1287/mksc.2022.0393',
                     isNew: true
                 },
                 {
