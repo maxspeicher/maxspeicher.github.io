@@ -58,13 +58,13 @@ const MAX = {
             {
                 when: ['03/17', '09/18'],
                 where: 'University of Michigan',
-                what: ['Post-Doctoral Researcher'],
+                what: ['Postdoctoral Researcher'],
                 link: 'https://www.mi2lab.com/'
             },
             {
                 when: ['03/15', '02/17'],
                 where: 'bitstars',
-                what: ['VP of Analytics & CRO'],
+                what: ['VP of Data Analytics & CRO'],
                 link: 'https://www.holobuilder.com/'
             },
             {
@@ -77,6 +77,13 @@ const MAX = {
         research: {
             highlightAuthor: 'M. Speicher',
             publications: [
+                {
+                    title: 'Smart Green Nudging: Reducing Product Returns ThroughDigital Footprints and Causal Machine Learning',
+                    authors: ['M. von Zahn', 'K. Bauer', 'C. Mihale-Wilson', 'J. Jagow', 'M. Speicher', 'O. Hinz'],
+                    link: 'https://dl.acm.org/doi/10.1145/3461727',
+                    isNew: true,
+                    award: '🏅 Finalist, 2022 Gary L. Lilien ISMS-MSI Practice Prize Competition'
+                },
                 {
                     title: 'Designers, the Stage Is Yours! Medium-Fidelity Prototyping of Augmented & Virtual Reality Interfaces with 360theater',
                     authors: ['M. Speicher', 'K. Lewis', 'M. Nebeling'],
@@ -124,9 +131,14 @@ const MAX = {
         },
         writing: [
             {
+                title: 'Crafting a vision that inspires',
+                publication: 'UX Collective',
+                isNew: true,
+                link: 'https://uxdesign.cc/crafting-a-vision-that-inspires-9cc68064d49c'
+            },
+            {
                 title: 'An Actionable And Reliable Usability Questionnaire With Only 7 Items: §Inuit§',
                 publication: 'Smashing Magazine',
-                isNew: true,
                 link: 'https://www.smashingmagazine.com/2023/10/actionable-reliable-usability-questionnaire-inuit/'
             },
             {
@@ -168,13 +180,13 @@ const MAX = {
                 title: 'KPI-centered design',
                 publication: 'UX Collective',
                 link: 'https://uxdesign.cc/kpi-centered-design-8d1f4e231a5'
-            },*/
+            },
             {
                 title: 'How to become a UX designer — no matter what you studied at uni',
                 publication: 'The Next Web',
                 link: 'https://thenextweb.com/growth-quarters/2020/09/28/how-to-become-a-ux-designer-no-matter-what-you-studied-at-uni/'
             },
-            /*{
+            {
                 title: 'How to build and lead user experience (UX) teams',
                 publication: 'UX Collective',
                 link: 'https://uxdesign.cc/how-to-build-and-lead-user-experience-ux-teams-6d4b802071d0'
