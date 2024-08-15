@@ -81,8 +81,7 @@ const MAX = {
                     title: 'Smart Green Nudging: Reducing Product Returns ThroughDigital Footprints and Causal Machine Learning',
                     authors: ['M. von Zahn', 'K. Bauer', 'C. Mihale-Wilson', 'J. Jagow', 'M. Speicher', 'O. Hinz'],
                     link: 'https://dl.acm.org/doi/10.1145/3461727',
-                    isNew: true,
-                    award: '🏅 Finalist, 2022 Gary L. Lilien ISMS-MSI Practice Prize Competition'
+                    isNew: true
                 },
                 {
                     title: 'Designers, the Stage Is Yours! Medium-Fidelity Prototyping of Augmented & Virtual Reality Interfaces with 360theater',
