@@ -33,14 +33,14 @@ const MAX = {
         work: [
             {
                 when: ['09/21', 'present'],
-                where: 'BestSecret Group',
+                where: 'Best Secret GmbH',
                 what: ['Director of Product Design'],
                 link: 'https://www.bestsecret.com/'
             },
             {
                 when: ['11/23', 'present'],
                 where: 'neverdone.',
-                what: ['Strategy Advisor'],
+                what: ['Advisor, UX Research & Strategy'],
                 link: 'https://neverdone.app/'
             },
             {
@@ -81,7 +81,7 @@ const MAX = {
                     title: 'Smart Green Nudging: Reducing Product Returns Through Digital Footprints and Causal Machine Learning',
                     authors: ['M. von Zahn', 'K. Bauer', 'C. Mihale-Wilson', 'J. Jagow', 'M. Speicher', 'O. Hinz'],
                     link: 'https://doi.org/10.1287/mksc.2022.0393',
-                    isNew: true
+                    //isNew: true
                 },
                 {
                     title: 'Designers, the Stage Is Yours! Medium-Fidelity Prototyping of Augmented & Virtual Reality Interfaces with 360theater',
@@ -130,10 +130,10 @@ const MAX = {
         },
         writing: [
             {
-                title: 'Crafting a vision that inspires',
-                publication: 'UX Collective',
+                title: 'What if You Could Reduce Returned Products With Just Some Lines of Text?',
+                publication: 'Better Marketing',
                 isNew: true,
-                link: 'https://uxdesign.cc/crafting-a-vision-that-inspires-9cc68064d49c'
+                link: 'https://medium.com/better-marketing/what-if-you-could-reduce-returned-products-with-just-some-lines-of-text-2776e6d9ba41'
             },
             {
                 title: 'An Actionable And Reliable Usability Questionnaire With Only 7 Items: §Inuit§',
