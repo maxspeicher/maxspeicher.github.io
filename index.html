@@ -47,12 +47,23 @@
         <script src="components/header.js"></script>
         <div id="main">
             <div id="grid">
-                <section class="column">
+                <section class="column column--short">
                     <div id="intro-title"></div>
                     <script>
                         ReactDOM.render(e(SectionTitle, { text: 'Hi, I\'m Max!' }), document.querySelector('#intro-title'));
                     </script>
-                    <p style="font-weight: 500">
+                    <p>I <a href="https://www.goodreads.com/maxspeicher" target="_blank">read</a>.</p>
+                    <p>I <a href="https://stash.games/users/__xam__" target="_blank">play</a>.</p>
+                    <p>I <a href="https://maxspeicher.medium.com" target="_blank">write</a>.</p>
+                    <p>I <a href="https://maxspeicher.substack.com" target="_blank">poetize</a>.</p>
+                    <p>I <a href="https://scholar.google.com/citations?user=uHCRUlQAAAAJ&hl=en" target="_blank">research</a>.</p>
+                    <p>I <a href="#ringtennis" target="_blank">ringtennis</a>*.</p>
+                    <p>I <a href="https://www.bestsecret.com" target="_blank">design</a>.</p>
+                    <p>I <a href="#open-source" target="_blank">code</a>.</p>
+                    <p>I <a href="#work" target="_blank">work</a>.</p>
+                    <p style="font-size: small;">* <strong>ring·ten·nis</strong> (rĭng′tĕn′ĭs) &ndash; v., to practice the sport
+                        of ringtennis; past tense and past participle <strong>ringtennis(s)ed</strong>.</p>
+                    <!--<p style="font-weight: 500">
                         I support businesses in creating user experiences &amp; products that put them ahead of the competition by deeply
                         understanding their customers &amp; crafting effective strategies.
                     </p>
@@ -87,14 +98,14 @@
                     </p>
                     <p>
                         Apart from that, I love to write, about anything UX &amp; design. And poetry.
-                        <!--If you want to support my writing, you can:<br />
+                        If you want to support my writing, you can:<br />
                         <div class="center">
                             <button onclick="window.open('https://www.buymeacoffee.com/maxspeicher', '_blank')">☕ buy me a coffee</button><br />
                             <button onclick="window.open('https://www.maxspeicher.com/newsletter', '_blank')">🗞️ subscribe to my newsletter</button>
-                        </div>-->
-                    </p>
+                        </div>
+                    </p>-->
                 </section>
-                <section class="column column--short">
+                <section class="column">
                     <div id="writing"></div>
                     <script src="components/writing.js"></script>
                 </section>
@@ -106,15 +117,15 @@
                     <div id="research"></div>
                     <script src="components/research.js"></script>
                 </section>
-                <section class="column column--short">
+                <section class="column column--short" id="section__work">
                     <div id="work"></div>
                     <script src="components/work.js"></script>
                 </section>
-                <section class="column column--short">
+                <section class="column column--short" id="section__ringtennis">
                     <div id="ringtennis"></div>
                     <script src="components/ringtennis.js"></script>
                 </section>
-                <section class="column column--short">
+                <section class="column column--short" id="section__open-source">
                     <div id="open-source"></div>
                     <script src="components/open-source.js"></script>
                 </section>

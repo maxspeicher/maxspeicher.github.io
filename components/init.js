@@ -38,6 +38,11 @@ const e = React.createElement;
      */
 
     const colorSchemes = {
+        'blue': {
+            background: '#f4f5f6',
+            foreground: 'rgba(6, 83, 121, 1.0)',
+            highlight: '#f863ab'
+        },
         'bonay': {
             background: '#f3e2ca',
             foreground: 'rgba(0, 0, 178, 1.0)',
@@ -112,4 +117,31 @@ const e = React.createElement;
     window.addEventListener('hashchange', setColorScheme, false);
 
     setColorScheme();
+
+
+
+    /**
+     * FOR LINKING TO SECTIONS WITHIN THE PAGE
+     */
+
+    function smoothScroll(event) {
+        event.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+    
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const anchors = document.querySelectorAll('a[href^="#"]:not([href="#"])');
+        
+        anchors.forEach(anchor => {
+          anchor.addEventListener('click', smoothScroll);
+        });
+    });
 })();

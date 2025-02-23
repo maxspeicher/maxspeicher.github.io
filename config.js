@@ -46,13 +46,13 @@ const MAX = {
             {
                 when: ['04/21', 'present'],
                 where: 'Jagow Speicher',
-                what: ['Partner', 'Fractional UX Lead', 'Principal UX Researcher', 'UX Consultant'],
+                what: ['Partner', 'Freelance Consultant'],
                 link: 'https://www.linkedin.com/company/jagow-speicher/'
             },
             {
                 when: ['10/18', '08/21'],
                 where: 'C&A',
-                what: ['UX Manager', 'Product Owner'],
+                what: ['UX Manager', 'Functional Lead', 'Product Owner'],
                 link: 'https://www.c-a.com/'
             },
             {
