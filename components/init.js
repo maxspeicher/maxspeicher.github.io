@@ -70,7 +70,7 @@ const e = React.createElement;
             --background: ${colorSchemes[colorSchemeId].background};
             --foreground: ${colorSchemes[colorSchemeId].foreground};
             --highlight: ${colorSchemes[colorSchemeId].highlight};
-            --link-highligt: ${colorSchemes[colorSchemeId].foreground.replace('1.0', '.15')};
+            --link-highlight: ${colorSchemes[colorSchemeId].foreground.replace('1.0', '.15')};
         }`;
 
         // If the new style is the same as the old one, do nothing

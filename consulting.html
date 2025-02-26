@@ -38,6 +38,43 @@
         <script src="components/flags-and-icons.js"></script>
         <script src="components/section-title.js"></script>
         <script src="components/util.js"></script>
+        <script>
+            const correctHash = 'd8d4142e1b04a925f69838dfd7621abfe797656abc33916d7d7b89906f98859b';
+            const protectedUrl = 'TBMbHxdPV0YeBhccFAccEAELF10dS1AOAAFKBhEdFkgsAAoRAB8dBwsUXmlFHwYCDRkRCB1KPB8BCxYbDBxIBUIJFlEJDF0QS1hGXlxXUAYUElBfUUQRFkZRC1ZVEEtcEAQ=';
+            let toastActive = false;
+
+            function showToast(msg, icon = '') {
+                if (toastActive) return;
+
+                const toast = document.getElementById('toast');
+                if (!toast) return;
+
+                toast.innerHTML = icon ? `<i class="${icon}"></i> ${msg}` : msg;
+                toast.classList.add('show');
+                
+                toastActive = true;
+
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                    toastActive = false;
+                }, 3000);
+            }
+            
+            async function checkPassword() {
+                const password = document.getElementById("password").value;
+                const hashed = await hashPassword(password);
+                const decryptedUrl = decryptUrl(protectedUrl, password);
+
+                console.log(hashed);
+                console.log(decryptedUrl);
+
+                if (hashed === correctHash) {
+                    window.open(decryptUrl(protectedUrl, password), '_blank');
+                } else {
+                    showToast('Incorrect password', 'fas fa-times-circle');
+                }
+            }
+        </script>
     </head>
     <body>
         <div id="reload-button-container"></div>
@@ -84,9 +121,35 @@
                         <button onclick="window.open('https://forms.gle/fdzUcPyoSccc9CNCA', '_blank')">👋🏻 get in touch</button>
                     </p>
                 </section>
+                <section class="column column--short">
+                    <div id="case-studies"></div>
+                    <script>
+                        ReactDOM.render(e(SectionTitle, { text: 'Case Studies' }), document.querySelector('#case-studies'));
+                    </script>
+                    <div class="form-group">
+                        <input type="password" id="password" placeholder="Enter Password">
+                        <label for="password">Enter Password</label>
+                    </div>
+                    <button id="cases-button" onclick="checkPassword();">🗂️ access case studies</button>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', () => {
+                            const passwordInput = document.getElementById('password');
+                            const button = document.getElementById('cases-button');
+
+                            passwordInput.addEventListener('keydown', (event) => {
+                                if (event.key === 'Enter') {
+                                    button.classList.add('active');
+                                    setTimeout(() => button.classList.remove('active'), 100);
+                                    checkPassword();
+                                }
+                            });
+                        });
+                    </script>
+                </section>
             </div>
             <footer></footer>
             <script src="components/footer.js"></script>
         </div>
+        <div id="toast" class="toast"></div>
     </body>
 </html>

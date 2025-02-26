@@ -34,13 +34,13 @@ const MAX = {
             {
                 when: ['09/21', 'present'],
                 where: 'Best Secret GmbH',
-                what: ['Director of Product Design'],
+                what: ['Product Design Director'],
                 link: 'https://www.bestsecret.com/'
             },
             {
                 when: ['11/23', 'present'],
                 where: 'neverdone.',
-                what: ['Advisor, UX Research & Strategy'],
+                what: ['Strategy Advisor'],
                 link: 'https://neverdone.app/'
             },
             {

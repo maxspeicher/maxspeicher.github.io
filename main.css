@@ -10,7 +10,7 @@
     /*--background: #d2e1c8;
     --foreground: #1f574c;
     --highlight: #fff203;
-    --link-highligt: rgba(31, 87, 76, .15);*/
+    --link-highlight: rgba(31, 87, 76, .15);*/
 
     --sans-serif-font: "Helvetica Neue", Helvetica, Verdana, sans-serif;
     --serif-font: Georgia, "Times New Roman", Times, serif;
@@ -53,7 +53,7 @@ button {
     font-family: inherit;
     font-size: .75em;
     font-weight: bold;
-    margin-top: 1.5em;
+    margin: calc(1.5em + 6px) 0 0 6px;
     padding: 1em;
     text-decoration: none;
     text-transform: uppercase;
@@ -61,7 +61,7 @@ button {
     transition: all .2s;
 }
 
-button:active {
+button:active, button.active {
     background-color: var(--foreground);
     box-shadow: var(--foreground) 0px 0px 0px 0px;
     color: var(--background);
@@ -169,6 +169,57 @@ section h2::after {
     grid-column-end: span 12;
 }*/
 
+.form-group {
+    max-width: 21em;
+    margin-top: 1.5em;
+    position: relative;
+}
+
+.form-group input {
+    background-color: var(--background);
+    border: 3px solid var(--foreground);
+    border-radius: 6px;
+    box-shadow: var(--foreground) 6px 6px 0px 0px;
+    box-sizing: border-box;
+    color: var(--foreground);
+    font-family: inherit;
+    font-size: 1em;
+    margin: 6px 0 0 6px;
+    padding: 1em;
+    width: calc(100% - 6px);
+    transform: translate(-6px, -6px);
+    transition: all 0.2s ease-in-out;
+}
+
+.form-group label {
+    position: absolute;
+    left: calc(.5em + 3px);
+    top: 50%;
+    transform: translate(-3px, calc(-50% - 3px));
+    background-color: var(--background);
+    padding: 0 0.5em;
+    color: var(--foreground);
+    font-size: 1em;
+    pointer-events: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-group input::placeholder {
+    color: transparent;
+    transition: color 0.2s ease-in-out;
+}
+
+.form-group input:focus::placeholder {
+    color: transparent;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label {
+    top: 0;
+    transform: translateY(-0.68em) scale(0.75);
+    color: var(--foreground);
+}
+
 .highlight {
     color: var(--highlight);
 }
@@ -230,6 +281,50 @@ section h2::after {
     opacity: .5;
 }
 
+.toast {
+    visibility: hidden;
+    background-color: var(--foreground);
+    color: var(--background);
+    text-align: center;
+    border-radius: 999px;
+    padding: 0.8em 1.5em;
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    bottom: var(--global-margin);
+    transform: translateX(-50%);
+    max-width: calc(100% - 2*var(--global-margin));
+    opacity: 0;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.toast.show {
+    visibility: visible;
+    animation: pill-fadein 0.3s ease-out forwards, pill-fadeout 0.3s ease-in 2.7s forwards;
+}
+
+@keyframes pill-fadein {
+    from {
+      transform: translate(-50%, 10px);
+      opacity: 0;
+    }
+    to {
+      transform: translate(-50%, 0);
+      opacity: 1;
+    }
+}
+  
+@keyframes pill-fadeout {
+    from {
+      transform: translate(-50%, 0);
+      opacity: 1;
+    }
+    to {
+      transform: translate(-50%, 10px);
+      opacity: 0;
+    }
+}
+
 /**
  * IDs
  */
@@ -243,14 +338,14 @@ section h2::after {
 }
 
 #main a {
-    box-shadow: inset 0 -.25em var(--link-highligt);
+    box-shadow: inset 0 -.25em var(--link-highlight);
     padding-bottom: -.25em;
     position: relative;
     transition: all .2s;
 }
 
 #main a:hover {
-    box-shadow: inset 0 -.75em var(--link-highligt);
+    box-shadow: inset 0 -.75em var(--link-highlight);
 }
 
 #reload-button-container {
