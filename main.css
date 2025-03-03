@@ -293,9 +293,10 @@ section h2::after {
     left: 50%;
     bottom: var(--global-margin);
     transform: translateX(-50%);
-    max-width: calc(100% - 2*var(--global-margin));
+    max-width: calc(100vw - 2*var(--global-margin));
     opacity: 0;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+    white-space: nowrap;
 }
 
 .toast.show {
