@@ -1,38 +1,50 @@
-:root {
-    /* --background: #ffffff;
+/**
+ * Table of Contents:
+ * 1. Variables & Root Configuration
+ * 2. Base Elements
+ * 3. Typography
+ * 4. Layout Components
+ * 5. Form Elements
+ * 6. Utilities
+ * 7. Animations
+ * 8. Media Queries
+ */
+
+/* =============================================
+   1. Variables & Root Configuration
+   ============================================= */
+   :root {
+    /* Color Themes (commented out but organized) */
+    /* Theme 1
+    --background: #ffffff;
     --foreground: #fdc702;
-    --highlight: #fff203; */
+    --highlight: #fff203;
+    */
 
-    /*--background: #74DAC6;
+    /* Theme 2
+    --background: #74DAC6;
     --foreground: #333366;
-    --highlight: #fff203;*/
+    --highlight: #fff203;
+    */
 
-    /*--background: #d2e1c8;
+    /* Theme 3
+    --background: #d2e1c8;
     --foreground: #1f574c;
     --highlight: #fff203;
-    --link-highlight: rgba(31, 87, 76, .15);*/
+    --link-highlight: rgba(31, 87, 76, .15);
+    */
 
+    /* Typography */
     --sans-serif-font: "Helvetica Neue", Helvetica, Verdana, sans-serif;
     --serif-font: Georgia, "Times New Roman", Times, serif;
-
+    
+    /* Spacing */
     --global-margin: 3em;
 }
 
-@media only screen and (max-width: 480px) {
-    :root {
-        --global-margin: 1.5em;
-    }
-}
-
-/**
- * HTML tags
- */
-
-a {
-    color: var(--foreground);
-    text-decoration: none;
-}
-
+/* =============================================
+   2. Base Elements
+   ============================================= */
 body {
     background-color: var(--background);
     color: var(--foreground);
@@ -42,42 +54,18 @@ body {
     margin: var(--global-margin) var(--global-margin) var(--global-margin) 0;
 }
 
-button {
-    background-color: var(--background);
-    border: 3px var(--foreground) solid;
-    border-radius: 6px;
-    box-shadow: var(--foreground) 6px 6px 0px 0px;
+a {
     color: var(--foreground);
-    cursor: pointer;
-    display: inline-block;
-    font-family: inherit;
-    font-size: .75em;
-    font-weight: bold;
-    margin: calc(1.5em + 6px) 0 0 6px;
-    padding: 1em;
     text-decoration: none;
-    text-transform: uppercase;
-    transform: translate(-6px, -6px);
-    transition: all .2s;
 }
 
-button:active, button.active {
-    background-color: var(--foreground);
-    box-shadow: var(--foreground) 0px 0px 0px 0px;
-    color: var(--background);
-    transform: translate(0, 0);
+p {
+    margin-block-end: 1.5em;
 }
 
-footer {
-    clear: left;
-    font-family: var(--serif-font);
-    margin: var(--global-margin) 0 0 var(--global-margin);
-}
-
-header {
-    margin: 0 0 var(--global-margin) var(--global-margin);
-}
-
+/* =============================================
+   3. Typography
+   ============================================= */
 h1 {
     display: inline-block;
     font-family: var(--sans-serif-font);
@@ -90,39 +78,6 @@ h1 {
 h1 a {
     border: 0;
     font-weight: lighter;
-}
- 
-nav {
-    display: inline-block;
-}
-
-nav a {
-    margin-right: calc(var(--global-margin) / 2);
-    padding-bottom: 5px;
-    position: relative;
-    text-decoration: none;
-}
-
-nav a:hover::after, nav a.current-page::after {
-    bottom: 0;
-    color: var(--highlight);
-    content: '●';
-    height: 45%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    width: 100%;
-    z-index: -1;
-}
-
-p {
-    margin-block-end: 1.5em;
-}
-
-section:not(.column) {
-    margin: 0 0 var(--global-margin) var(--global-margin);
-    max-width: 60em;
 }
 
 section h2 {
@@ -145,16 +100,89 @@ section h2::after {
     z-index: -1;
 }
 
-/**
- * classes
- */
-
-.block {
-    display: block;
+/* Text modifiers */
+.highlight {
+    color: var(--highlight);
 }
 
-.center {
+.highlight-box {
+    border: 1px var(--foreground) solid;
+    border-radius: 3px;
+    font-size: .67em;
+    padding: 2px;
+    vertical-align: bottom;
+}
+
+.lighter {
+    opacity: .67;
+}
+
+.secondary {
+    font-size: .75em;
+    opacity: .67;
+}
+
+.tertiary {
+    font-size: .67em;
+    opacity: .5;
+}
+
+.small-caps {
+    font-variant: small-caps;
+    text-transform: lowercase;
+}
+
+/* =============================================
+   4. Layout Components
+   ============================================= */
+header {
+    margin: 0 0 var(--global-margin) var(--global-margin);
+}
+
+footer {
+    clear: left;
+    font-family: var(--serif-font);
+    margin: var(--global-margin) 0 0 var(--global-margin);
+}
+
+section:not(.column) {
+    margin: 0 0 var(--global-margin) var(--global-margin);
+    max-width: 60em;
+}
+
+/* Navigation */
+nav {
+    display: inline-block;
+}
+
+nav a {
+    margin-right: calc(var(--global-margin) / 2);
+    padding-bottom: 5px;
+    position: relative;
+    text-decoration: none;
+}
+
+nav a:hover::after, 
+nav a.current-page::after {
+    bottom: 0;
+    color: var(--highlight);
+    content: '●';
+    height: 45%;
+    left: 0;
+    position: absolute;
+    right: 0;
     text-align: center;
+    width: 100%;
+    z-index: -1;
+}
+
+/* Grid System */
+#grid {
+    display: grid;
+    gap: var(--global-margin);
+    grid-template-columns: repeat(auto-fill, var(--global-margin));
+    grid-template-rows: masonry;
+    margin-left: var(--global-margin);
 }
 
 .column {
@@ -165,10 +193,63 @@ section h2::after {
     grid-column-end: span 4;
 }
 
-/*.column--wide {
+/* Uncommented but kept for reference
+.column--wide {
     grid-column-end: span 12;
-}*/
+}
+*/
 
+/* Content links */
+#main a {
+    box-shadow: inset 0 -.25em var(--link-highlight);
+    padding-bottom: -.25em;
+    position: relative;
+    transition: all .2s;
+}
+
+#main a:hover {
+    box-shadow: inset 0 -.75em var(--link-highlight);
+}
+
+/* Fixed position elements */
+#reload-button-container {
+    position: absolute;
+    top: var(--global-margin);
+    right: var(--global-margin);
+}
+
+/* =============================================
+   5. Form Elements
+   ============================================= */
+/* Buttons */
+button {
+    background-color: var(--background);
+    border: 3px var(--foreground) solid;
+    border-radius: 6px;
+    box-shadow: var(--foreground) 6px 6px 0px 0px;
+    color: var(--foreground);
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: .75em;
+    font-weight: bold;
+    margin: calc(1.5em + 6px) 0 0 6px;
+    padding: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transform: translate(-6px, -6px);
+    transition: all .2s;
+}
+
+button:active, 
+button.active {
+    background-color: var(--foreground);
+    box-shadow: var(--foreground) 0px 0px 0px 0px;
+    color: var(--background);
+    transform: translate(0, 0);
+}
+
+/* Input fields */
 .form-group {
     max-width: 21em;
     margin-top: 1.5em;
@@ -220,67 +301,7 @@ section h2::after {
     color: var(--foreground);
 }
 
-.highlight {
-    color: var(--highlight);
-}
-
-.highlight-box {
-    border: 1px var(--foreground) solid;
-    border-radius: 3px;
-    font-size: .67em;
-    padding: 2px;
-    vertical-align: bottom;
-}
-
-.inline-block {
-    display: inline-block;
-}
-
-.lighter {
-    opacity: .67;
-}
-
-.margin-right--inline {
-    margin-right: .5em;
-}
-
-.rotate {
-    display: inline-block;
-    transform-origin: center;
-    transition: all .5s;
-}
-
-.secondary {
-    font-size: .75em;
-    opacity: .67;
-}
-
-.small-caps {
-    font-variant: small-caps;
-    text-transform: lowercase;
-}
-
-.svg-fill--background {
-    fill: var(--background);
-}
-
-.svg-fill--foreground {
-    fill: var(--foreground);
-}
-
-.svg-stroke--background {
-    stroke: var(--background);
-}
-
-.svg-stroke--foreground {
-    stroke: var(--foreground);
-}
-
-.tertiary {
-    font-size: .67em;
-    opacity: .5;
-}
-
+/* Toast notifications */
 .toast {
     visibility: hidden;
     background-color: var(--foreground);
@@ -304,69 +325,94 @@ section h2::after {
     animation: pill-fadein 0.3s ease-out forwards, pill-fadeout 0.3s ease-in 2.7s forwards;
 }
 
+/* =============================================
+   6. Utilities
+   ============================================= */
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.center {
+    text-align: center;
+}
+
+.margin-right--inline {
+    margin-right: .5em;
+}
+
+.rotate {
+    display: inline-block;
+    transform-origin: center;
+    transition: all .5s;
+}
+
+/* SVG utilities */
+.svg-fill--background {
+    fill: var(--background);
+}
+
+.svg-fill--foreground {
+    fill: var(--foreground);
+}
+
+.svg-stroke--background {
+    stroke: var(--background);
+}
+
+.svg-stroke--foreground {
+    stroke: var(--foreground);
+}
+
+/* =============================================
+   7. Animations
+   ============================================= */
 @keyframes pill-fadein {
     from {
-      transform: translate(-50%, 10px);
-      opacity: 0;
+        transform: translate(-50%, 10px);
+        opacity: 0;
     }
     to {
-      transform: translate(-50%, 0);
-      opacity: 1;
+        transform: translate(-50%, 0);
+        opacity: 1;
     }
 }
   
 @keyframes pill-fadeout {
     from {
-      transform: translate(-50%, 0);
-      opacity: 1;
+        transform: translate(-50%, 0);
+        opacity: 1;
     }
     to {
-      transform: translate(-50%, 10px);
-      opacity: 0;
+        transform: translate(-50%, 10px);
+        opacity: 0;
     }
 }
 
-/**
- * IDs
- */
-
-#grid {
-    display: grid;
-    gap: var(--global-margin);
-    grid-template-columns: repeat(auto-fill, var(--global-margin));
-    grid-template-rows: masonry;
-    margin-left: var(--global-margin);
+/* =============================================
+   8. Media Queries
+   ============================================= */
+@media only screen and (max-width: 480px) {
+    :root {
+        --global-margin: 1.5em;
+    }
 }
 
-#main a {
-    box-shadow: inset 0 -.25em var(--link-highlight);
-    padding-bottom: -.25em;
-    position: relative;
-    transition: all .2s;
-}
-
-#main a:hover {
-    box-shadow: inset 0 -.75em var(--link-highlight);
-}
-
-#reload-button-container {
-    position: absolute;
-    top: var(--global-margin);
-    right: var(--global-margin);
-}
-
-/**
- * Small Screens (.column--wide isn't considered here yet)
- */
-
- @media only screen and (min-width: 51em) and (max-width: 63em) { /* 1 long column + 1 short column + 3 * global margin = 21 * global margin */
+/* Medium screens */
+@media only screen and (min-width: 51em) and (max-width: 63em) {
     .column:not(.column--short) {
         grid-column-end: span 8;
     }
 }
 
- @media only screen and (max-width: 51em) { /* 2 short columns + 3 * global margin = 17 * global margin */
-    .column, .column--short, .column--wide {
+/* Small screens */
+@media only screen and (max-width: 51em) {
+    .column, 
+    .column--short, 
+    .column--wide {
         grid-column-end: span 1;
     }
 
@@ -375,6 +421,7 @@ section h2::after {
     }
 }
 
+/* Very small screens */
 @media only screen and (max-width: 349px) {
     #reload-button-container {
         display: none;
