@@ -1,137 +1,89 @@
-<!DOCTYPE html>
+---
+layout: default
+title: "Personal Website"
+description: "Welcome to my personal website, where I talk about my writing &amp; research, &amp; a bit about the freelance consulting I do."
+keywords: "writing, essays, articles, poetry, research, academic research, ringtennis, design, user experience, human-centered design, design thinking"
+---
 
-<html lang="en">
-    <head>
-        <title>Maximilian Speicher • Personal Website</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Hi, I'm Max! I develop UX strategies and teams that put businesses ahead of the competition. 👨🏻‍🔬">
-        <meta name="keywords" content="consulting, design thinking, research, usability, user experience, UX strategy, UX leadership, design strategy, design leadership, strategy, leadership">
-        <meta name="robots" content="index, follow">
-
-        <!-- Font Awesome -->
-        <link href="fontawesome/css/all.min.css" type="text/css" rel="stylesheet">
-
-        <link rel="stylesheet" type="text/css" href="main.css">
-        <link rel="icon" type="image/png" href="M2.png">
-
-        <script src="config.js"></script>
-
-        <!-- Load React. -->
-        <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-        <script>
-            if (location.hostname === MAX.productionHostname) {
-                document.write(
-                    '<script src="react/react.production.min.js"><\/script>' +
-                    '<script src="react/react-dom.production.min.js"><\/script>'
-                );
-            } else {
-                document.write(
-                    '<script src="react/react.development.js"><\/script>' +
-                    '<script src="react/react-dom.development.js"><\/script>'
-                );
-            }
-        </script>
-
-        <script src="plugins/typewriter.js"></script>
-        <script src="components/init.js"></script>
-        <script src="components/flags-and-icons.js"></script>
-        <script src="components/maxdown.js"></script>
-        <script src="components/section-title.js"></script>
-        <script src="components/util.js"></script>
-    </head>
-    <body>
-        <div id="reload-button-container"></div>
-        <script src="components/reload-button.js"></script>
-        <header></header>
-        <script src="components/header.js"></script>
-        <div id="main">
-            <div id="grid">
-                <section class="column column--short">
-                    <div id="intro-title"></div>
-                    <script>
-                        ReactDOM.render(e(SectionTitle, { text: 'Hi, I\'m Max!' }), document.querySelector('#intro-title'));
-                    </script>
-                    <p>I <a href="https://www.goodreads.com/maxspeicher" target="_blank">read</a>.</p>
-                    <p>I <a href="https://stash.games/users/__xam__" target="_blank">play</a>.</p>
-                    <p>I <a href="https://maxspeicher.medium.com" target="_blank">write</a>.</p>
-                    <p>I <a href="https://maxspeicher.substack.com" target="_blank">poetize</a>.</p>
-                    <p>I <a href="https://scholar.google.com/citations?user=uHCRUlQAAAAJ&hl=en" target="_blank">research</a>.</p>
-                    <p>I <a href="#ringtennis" target="_blank">ringtennis</a>*.</p>
-                    <p>I <a href="https://www.bestsecret.com" target="_blank">design</a>.</p>
-                    <p>I <a href="#open-source" target="_blank">code</a>.</p>
-                    <p>I <a href="#work" target="_blank">work</a>.</p>
-                    <p style="font-size: small;">* <strong>ring·ten·nis</strong> (rĭng′tĕn′ĭs) &ndash; v., to practice the sport
-                        of ringtennis; past tense and past participle <strong>ringtennis(s)ed</strong>.</p>
-                    <!--<p style="font-weight: 500">
-                        I support businesses in creating user experiences &amp; products that put them ahead of the competition by deeply
-                        understanding their customers &amp; crafting effective strategies.
-                    </p>
-                    <p>
-                        <a href="https://www.mckinsey.com/capabilities/mckinsey-design/our-insights/the-business-value-of-design" target="_blank">A McKinsey study</a>
-                        found that companies with superior UX capabilities and customer centricity have 6.4%p higher revenue growth p.a.
-                        than their competitors.
-                        <a href="https://www.forbes.com/sites/forbestechcouncil/2017/01/23/how-ux-is-transforming-business-whether-you-want-it-to-or-not/" target="_blank">Other research</a>
-                        puts the ROI of good UX at 9900%.
-                        That's what I do.
-                        I make customers happy &amp; businesses successful.
-                    </p>
-                    <p>
-                        Currently, I'm Director of Product Design at Best Secret GmbH, &amp; freelance
-                        Strategy Advisor &amp; UX Consultant.
-                        I've gained extensive
-                        <span class="highlight-box">strategy</span> &amp;
-                        <span class="highlight-box">leadership</span> experience in
-                        <span class="highlight-box">UX</span>,
-                        <span class="highlight-box">research</span>, &amp;
-                        <span class="highlight-box">product</span>, in both academia &amp; industry, at start-ups &amp; large corporations
-                        alike.
-                        I received my Ph.D. in Computer Science for my work on search interaction optimization &amp; human-centered design
-                        at the R&amp;D department of Unister.
-                        Afterwards, I joined bitstars (now part of Faro Technologies) as a VP to work on their AR/VR platform HoloBuilder.
-                        During my postdoc at the University of Michigan in Ann Arbor, I continued working on interaction design, usability,
-                        &amp; AR/VR topics.
-                        And as the first UX Manager in C&amp;A's product management unit, I established their UX &amp; innovation practice
-                        from scratch.
-                        For my academic work, I received Best Paper awards at ACM CHI &amp; ACM EICS, where I have also regularly served as
-                        a reviewer.
-                    </p>
-                    <p>
-                        Apart from that, I love to write, about anything UX &amp; design. And poetry.
-                        If you want to support my writing, you can:<br />
-                        <div class="center">
-                            <button onclick="window.open('https://www.buymeacoffee.com/maxspeicher', '_blank')">☕ buy me a coffee</button><br />
-                            <button onclick="window.open('https://www.maxspeicher.com/newsletter', '_blank')">🗞️ subscribe to my newsletter</button>
-                        </div>
-                    </p>-->
-                </section>
-                <section class="column">
-                    <div id="writing"></div>
-                    <script src="components/writing.js"></script>
-                </section>
-                <section class="column column--short">
-                    <div id="poetry"></div>
-                    <script src="components/poetry.js"></script>
-                </section>
-                <section class="column">
-                    <div id="research"></div>
-                    <script src="components/research.js"></script>
-                </section>
-                <section class="column column--short" id="section__work">
-                    <div id="work"></div>
-                    <script src="components/work.js"></script>
-                </section>
-                <section class="column column--short" id="section__ringtennis">
-                    <div id="ringtennis"></div>
-                    <script src="components/ringtennis.js"></script>
-                </section>
-                <section class="column column--short" id="section__open-source">
-                    <div id="open-source"></div>
-                    <script src="components/open-source.js"></script>
-                </section>
-            </div>
-            <footer></footer>
-            <script src="components/footer.js"></script>
+<section class="column column--short">
+    <div id="intro-title"></div>
+    <script>
+        ReactDOM.render(e(SectionTitle, { text: 'Hi, I\'m Max!' }), document.querySelector('#intro-title'));
+    </script>
+    <p>I <a href="https://www.goodreads.com/maxspeicher" target="_blank">read</a>.</p>
+    <p>I <a href="https://stash.games/users/__xam__" target="_blank">play</a>.</p>
+    <p>I <a href="https://maxspeicher.medium.com" target="_blank">write</a>.</p>
+    <p>I <a href="https://maxspeicher.substack.com" target="_blank">poetize</a>.</p>
+    <p>I <a href="https://scholar.google.com/citations?user=uHCRUlQAAAAJ&hl=en" target="_blank">research</a>.</p>
+    <p>I <a href="#ringtennis" target="_blank">ringtennis</a>*.</p>
+    <p>I <a href="https://www.bestsecret.com" target="_blank">design</a>.</p>
+    <p>I <a href="#open-source" target="_blank">code</a>.</p>
+    <p>I <a href="#work" target="_blank">work</a>.</p>
+    <p style="font-size: small;">* <strong>ring·ten·nis</strong> (rĭng′tĕn′ĭs) &ndash; v., to practice the sport
+        of ringtennis; past tense and past participle <strong>ringtennis(s)ed</strong>.</p>
+    <!--<p style="font-weight: 500">
+        I support businesses in creating user experiences &amp; products that put them ahead of the competition by deeply
+        understanding their customers &amp; crafting effective strategies.
+    </p>
+    <p>
+        <a href="https://www.mckinsey.com/capabilities/mckinsey-design/our-insights/the-business-value-of-design" target="_blank">A McKinsey study</a>
+        found that companies with superior UX capabilities and customer centricity have 6.4%p higher revenue growth p.a.
+        than their competitors.
+        <a href="https://www.forbes.com/sites/forbestechcouncil/2017/01/23/how-ux-is-transforming-business-whether-you-want-it-to-or-not/" target="_blank">Other research</a>
+        puts the ROI of good UX at 9900%.
+        That's what I do.
+        I make customers happy &amp; businesses successful.
+    </p>
+    <p>
+        Currently, I'm Director of Product Design at Best Secret GmbH, &amp; freelance
+        Strategy Advisor &amp; UX Consultant.
+        I've gained extensive
+        <span class="highlight-box">strategy</span> &amp;
+        <span class="highlight-box">leadership</span> experience in
+        <span class="highlight-box">UX</span>,
+        <span class="highlight-box">research</span>, &amp;
+        <span class="highlight-box">product</span>, in both academia &amp; industry, at start-ups &amp; large corporations
+        alike.
+        I received my Ph.D. in Computer Science for my work on search interaction optimization &amp; human-centered design
+        at the R&amp;D department of Unister.
+        Afterwards, I joined bitstars (now part of Faro Technologies) as a VP to work on their AR/VR platform HoloBuilder.
+        During my postdoc at the University of Michigan in Ann Arbor, I continued working on interaction design, usability,
+        &amp; AR/VR topics.
+        And as the first UX Manager in C&amp;A's product management unit, I established their UX &amp; innovation practice
+        from scratch.
+        For my academic work, I received Best Paper awards at ACM CHI &amp; ACM EICS, where I have also regularly served as
+        a reviewer.
+    </p>
+    <p>
+        Apart from that, I love to write, about anything UX &amp; design. And poetry.
+        If you want to support my writing, you can:<br />
+        <div class="center">
+            <button onclick="window.open('https://www.buymeacoffee.com/maxspeicher', '_blank')">☕ buy me a coffee</button><br />
+            <button onclick="window.open('https://www.maxspeicher.com/newsletter', '_blank')">🗞️ subscribe to my newsletter</button>
         </div>
-    </body>
-</html>
+    </p>-->
+</section>
+<section class="column">
+    <div id="writing"></div>
+    <script src="components/writing.js"></script>
+</section>
+<section class="column column--short">
+    <div id="poetry"></div>
+    <script src="components/poetry.js"></script>
+</section>
+<section class="column">
+    <div id="research"></div>
+    <script src="components/research.js"></script>
+</section>
+<section class="column column--short" id="section__work">
+    <div id="work"></div>
+    <script src="components/work.js"></script>
+</section>
+<section class="column column--short" id="section__ringtennis">
+    <div id="ringtennis"></div>
+    <script src="components/ringtennis.js"></script>
+</section>
+<section class="column column--short" id="section__open-source">
+    <div id="open-source"></div>
+    <script src="components/open-source.js"></script>
+</section>

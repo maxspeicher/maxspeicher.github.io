@@ -1,5 +1,7 @@
 'use strict';
 
+let toastActive = false;
+
 function escapeHtml(unsafe) {
     return unsafe
         .replace(/&/g, "&amp;")
@@ -25,4 +27,21 @@ function decryptUrl(encryptedUrl, key) {
     }
     
     return result;
+}
+
+function showToast(msg, icon = '') {
+    if (toastActive) return;
+
+    const toast = document.getElementById('toast');
+    if (!toast) return;
+
+    toast.innerHTML = icon ? `<i class="${icon}"></i> ${msg}` : msg;
+    toast.classList.add('show');
+    
+    toastActive = true;
+
+    setTimeout(() => {
+        toast.classList.remove('show');
+        toastActive = false;
+    }, 3000);
 }

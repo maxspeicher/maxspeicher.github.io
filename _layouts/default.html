@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include head.html %}
+    <body>
+        <div id="reload-button-container"></div>
+        <script src="components/reload-button.js"></script>
+        <header></header>
+        <script src="components/header.js"></script>
+        <div id="main">
+            {% if page.nogrid != true %}
+                <div id="grid">
+                    {{ content }}
+                </div>
+            {% else %}
+                {{ content }}
+            {% endif %}
+            <footer></footer>
+            <script src="components/footer.js"></script>
+        </div>
+        <div id="toast" class="toast"></div>
+    </body>    
+</html>
