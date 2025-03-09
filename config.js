@@ -271,6 +271,10 @@ const MAX = {
                 link: 'https://github.com/maxspeicher/maxspeicher.github.io'
             },
             {
+                title: '2024 U.S. Presidential Election Forecast',
+                link: 'https://github.com/maxspeicher/2024-us-presidential-election'
+            },
+            {
                 title: 'MaxSpeicher.com',
                 multipleLinks: {
                     v1: 'https://github.com/maxspeicher/v1',
@@ -369,10 +373,10 @@ const MAX = {
     footer: {},
     privacyPolicy: {
         name: 'Dr.-Ing. Maximilian Speicher',
-        addressLine1: '℅ Best Secret GmbH',
-        addressLine2: 'Margaretha-Ley-Ring 10',
-        zipAndCity: '85609 Aschheim',
-        stateAndOrCountry: 'Germany',
+        addressLine1: '℅ Best Secret GmbH Sucursal en España',
+        addressLine2: 'Calle Abeto, s/n, Centro Empresarial Granada, Polígono Industrial La Ermita',
+        zipAndCity: '18230 Atarfe, Granada',
+        stateAndOrCountry: 'Spain',
         email: '__maximilian.speicher__@bestsecret.com (underscores have been added for spam protection)'
     }
 
