@@ -233,7 +233,7 @@ button {
     font-family: inherit;
     font-size: .75em;
     font-weight: bold;
-    margin: calc(1.5em + 6px) 0 0 6px;
+    margin: calc(1.5em + 6px) 1em 0 6px;
     padding: 1em;
     text-decoration: none;
     text-transform: uppercase;
