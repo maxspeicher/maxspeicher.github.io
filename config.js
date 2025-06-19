@@ -130,9 +130,14 @@ const MAX = {
         },
         writing: [
             {
+                title: 'Bayesian A/B testing—a practical primer',
+                publication: 'UX Collective',
+                isNew: true,
+                link: 'https://uxdesign.cc/bayesian-a-b-testing-a-practical-primer-c0d4ab1c689e'
+            },
+            {
                 title: 'What if You Could Reduce Returned Products With Just Some Lines of Text?',
                 publication: 'Better Marketing',
-                isNew: true,
                 link: 'https://medium.com/better-marketing/what-if-you-could-reduce-returned-products-with-just-some-lines-of-text-2776e6d9ba41'
             },
             {
@@ -150,11 +155,11 @@ const MAX = {
                 publication: 'DOC',
                 link: 'https://www.doc.cc/articles/design-is-poetry'
             },
-            {
+            /*{
                 title: 'One Formula To Rule Them All: The ROI Of A Design System',
                 publication: 'Smashing Magazine',
                 link: 'https://www.smashingmagazine.com/2022/09/formula-roi-design-system/'
-            },
+            },*/
             {
                 title: 'Listen to users, but only 85% of the time: How Black Swans Can Save Innovation in a Data-Driven World',
                 publication: 'UX Collective',
@@ -269,6 +274,10 @@ const MAX = {
             {
                 title: 'This Website Template',
                 link: 'https://github.com/maxspeicher/maxspeicher.github.io'
+            },
+            {
+                title: 'Bayesian A/B testing conversion analysis tool',
+                link: 'https://colab.research.google.com/drive/16ip4kdFyb_3Meo4jq2Z4rzVQQNh0I7dV?usp=sharing'
             },
             {
                 title: '2024 U.S. Presidential Election Forecast',
