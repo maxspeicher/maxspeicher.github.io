@@ -130,10 +130,15 @@ const MAX = {
         },
         writing: [
             {
-                title: 'Bayesian A/B testing—a practical primer',
+                title: 'A UX carol',
                 publication: 'UX Collective',
                 isNew: true,
-                link: 'https://uxdesign.cc/bayesian-a-b-testing-a-practical-primer-c0d4ab1c689e'
+                link: 'https://uxdesign.cc/a-ux-carol-f23555760d5e'
+            },
+            {
+                title: 'No research is (often) better than “some” research',
+                publication: 'UX Collective',
+                link: 'https://uxdesign.cc/no-research-is-often-better-than-some-research-67a30c5a9add'
             },
             {
                 title: 'What if You Could Reduce Returned Products With Just Some Lines of Text?',
@@ -199,13 +204,13 @@ const MAX = {
                 title: 'How usability impacts profit: The Conversion/Usability Framework',
                 publication: 'UX Collective',
                 link: 'https://uxdesign.cc/the-conversion-usability-framework-3e2068edebbc'
-            },*/
+            },
             {
                 title: 'On Design Thinking',
                 publication: 'The UX Blog',
                 link: 'https://medium.com/theuxblog/on-design-thinking-4a4980aebe8d'
-            }
-            /*{
+            },
+            {
                 title: 'What is Design Thinking?',
                 publication: 'Muzli',
                 link: 'https://medium.muz.li/what-is-design-thinking-4afa067cb986'

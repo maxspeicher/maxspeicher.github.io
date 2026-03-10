@@ -57,6 +57,13 @@ const e = React.createElement;
             background: '#1f574c',
             foreground: 'rgba(210, 225, 200, 1.0)',
             highlight: '#cc00cc'
+        },
+        'sunrise': {
+            background: '#7A3500',
+            foreground: 'rgba(255, 251, 245, 1.0)',
+            highlight: '#FE5D9F',
+            gradientWarm: '#C96B2E',
+            gradientCool: '#9E4A6E'
         }/*,
         'purple': {
             background: '#2d053d',
@@ -66,11 +73,18 @@ const e = React.createElement;
     };
 
     const addColorSchemeCSS = (colorSchemeId) => {
-        const newStyle = `:root {
-            --background: ${colorSchemes[colorSchemeId].background};
-            --foreground: ${colorSchemes[colorSchemeId].foreground};
-            --highlight: ${colorSchemes[colorSchemeId].highlight};
-            --link-highlight: ${colorSchemes[colorSchemeId].foreground.replace('1.0', '.15')};
+        const scheme = colorSchemes[colorSchemeId];
+        let rootVars = `
+            --background: ${scheme.background};
+            --foreground: ${scheme.foreground};
+            --highlight: ${scheme.highlight};
+            --link-highlight: ${scheme.foreground.replace('1.0', '.15')};`;
+        if (scheme.gradientWarm !== undefined && scheme.gradientCool !== undefined) {
+            rootVars += `
+            --sunrise-gradient-warm: ${scheme.gradientWarm};
+            --sunrise-gradient-cool: ${scheme.gradientCool};`;
+        }
+        const newStyle = `:root {${rootVars}
         }`;
 
         // If the new style is the same as the old one, do nothing
@@ -89,6 +103,10 @@ const e = React.createElement;
         // Append the new style element and update the reference
         document.head.appendChild(style);
         styleElement = style;
+
+        // Add as class to the body element for special animated theme
+        document.documentElement.className = "";   // removes all classes
+        document.documentElement.classList.add(colorSchemeId);  // adds one specific class
 
         lastColorScheme = colorSchemeId;
     }

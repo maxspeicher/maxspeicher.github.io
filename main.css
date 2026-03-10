@@ -6,8 +6,9 @@
  * 4. Layout Components
  * 5. Form Elements
  * 6. Utilities
- * 7. Animations
- * 8. Media Queries
+ * 7. Special Animated Theme
+ * 8. Animations
+ * 9. Media Queries
  */
 
 /* =============================================
@@ -37,7 +38,7 @@
     /* Typography */
     --sans-serif-font: "Helvetica Neue", Helvetica, Verdana, sans-serif;
     --serif-font: Georgia, "Times New Roman", Times, serif;
-    
+
     /* Spacing */
     --global-margin: 3em;
 }
@@ -162,7 +163,7 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover::after, 
+nav a:hover::after,
 nav a.current-page::after {
     bottom: 0;
     color: var(--highlight);
@@ -241,7 +242,7 @@ button {
     transition: all .2s;
 }
 
-button:active, 
+button:active,
 button.active {
     background-color: var(--foreground);
     box-shadow: var(--foreground) 0px 0px 0px 0px;
@@ -294,8 +295,8 @@ button.active {
     color: transparent;
 }
 
-.form-group input:focus + label,
-.form-group input:not(:placeholder-shown) + label {
+.form-group input:focus+label,
+.form-group input:not(:placeholder-shown)+label {
     top: 0;
     transform: translateY(-0.68em) scale(0.75);
     color: var(--foreground);
@@ -368,32 +369,96 @@ button.active {
 }
 
 /* =============================================
-   7. Animations
+   7. Special Animated Theme
+   ============================================= */
+.sunrise #background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.sunrise #background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, var(--background), var(--sunrise-gradient-warm));
+    background-size: 200vw 200vh;
+    animation: gradientShift 12s ease infinite alternate;
+}
+
+.sunrise #background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, var(--sunrise-gradient-cool), var(--background));
+    background-size: 200vw 200vh;
+    animation:
+        gradientShift 20s ease-in-out infinite alternate,
+        colorPulse 30s ease-in-out infinite;
+    opacity: 0;
+    mix-blend-mode: overlay;
+}
+
+/* =============================================
+   8. Animations
    ============================================= */
 @keyframes pill-fadein {
     from {
         transform: translate(-50%, 10px);
         opacity: 0;
     }
+
     to {
         transform: translate(-50%, 0);
         opacity: 1;
     }
 }
-  
+
 @keyframes pill-fadeout {
     from {
         transform: translate(-50%, 0);
         opacity: 1;
     }
+
     to {
         transform: translate(-50%, 10px);
         opacity: 0;
     }
 }
 
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+@keyframes colorPulse {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
 /* =============================================
-   8. Media Queries
+   9. Media Queries
    ============================================= */
 @media only screen and (max-width: 480px) {
     :root {
@@ -410,8 +475,9 @@ button.active {
 
 /* Small screens */
 @media only screen and (max-width: 51em) {
-    .column, 
-    .column--short, 
+
+    .column,
+    .column--short,
     .column--wide {
         grid-column-end: span 1;
     }
