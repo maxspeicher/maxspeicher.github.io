@@ -389,7 +389,7 @@ button.active {
     height: 100vh;
     background: linear-gradient(135deg, var(--background), var(--sunrise-gradient-warm));
     background-size: 200vw 200vh;
-    animation: gradientShift 12s ease infinite alternate;
+    animation: gradientShift 20s ease infinite alternate;
 }
 
 .sunrise #background::after {

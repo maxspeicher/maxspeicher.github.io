@@ -61,7 +61,7 @@ const e = React.createElement;
         'sunrise': {
             background: '#7A3500',
             foreground: 'rgba(255, 251, 245, 1.0)',
-            highlight: '#FE5D9F',
+            highlight: '#E06B8A',
             gradientWarm: '#C96B2E',
             gradientCool: '#9E4A6E'
         }/*,
