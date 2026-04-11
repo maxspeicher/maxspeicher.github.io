@@ -241,7 +241,7 @@ const MAX = {
             {
                 title: '_Cava_, _Pimientos de Padrón_, _Burrata_, _Pasta al Tartufo_',
                 publication: 'The Whisky Blot',
-                link: 'https://tinyurl.com/msWbCppbpt'
+                link: 'https://tinyurl.com/msWbCppbpt2'
             },
             {
                 title: 'Vacation ◦ by the Pool • Three Variations',
@@ -251,7 +251,7 @@ const MAX = {
             {
                 title: 'Five Stanzas for Hemingway',
                 publication: 'The Whisky Blot',
-                link: 'https://tinyurl.com/msWbFsfh'
+                link: 'https://tinyurl.com/msWbFsfh2'
             },
             {
                 title: 'A Tale of Trees',
