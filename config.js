@@ -281,6 +281,11 @@ const MAX = {
                 link: 'https://github.com/maxspeicher/maxspeicher.github.io'
             },
             {
+                title: '2026 FIFA World Cup Predictions',
+                link: 'https://github.com/maxspeicher/2026-fifa-world-cup-predictions',
+                isNew: true
+            },
+            {
                 title: 'Bayesian A/B testing conversion analysis tool',
                 link: 'https://colab.research.google.com/drive/16ip4kdFyb_3Meo4jq2Z4rzVQQNh0I7dV?usp=sharing'
             },

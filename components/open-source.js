@@ -11,6 +11,7 @@ class OpenSource extends React.Component {
             if (project.link) {
                 entries.push(
                     e('p', null,
+                        project.isNew ? e(NewFlag, { className: 'margin-right--inline', style: { height: '1em' }, type: 2 }) : '',
                         e('span', { className: 'margin-right--inline'}, e('a', { href: project.link, target: '_blank' }, project.title)),
                         project.groupProject ? e('span', { className: 'secondary' }, 'Contributor') : ''
                     )
@@ -30,6 +31,7 @@ class OpenSource extends React.Component {
                 
                 entries.push(
                     e('p', null,
+                        project.isNew ? e(NewFlag, { className: 'margin-right--inline', style: { height: '1em' }, type: 2 }) : '',
                         e('span', { className: 'margin-right--inline'}, project.title),
                         ...links,
                         project.groupProject ? e('span', { className: 'secondary' }, 'Contributor') : ''
